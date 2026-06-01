@@ -17,7 +17,7 @@
 
 ### 1.2 Job Postings Table
 
-> Paste from `hw01-job-postings-table-template.md`
+> Paste from `hw01-job-postings-template.md`
 
 ---
 
