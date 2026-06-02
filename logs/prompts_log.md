@@ -287,6 +287,26 @@ Multimodal AI products drive demand for specialized QA (audio/video/text), not o
 ### Evidence
 ![alt text](req1-images/req1-linkedin-posting-10.png)
 
+
+
+## Formatting
+
+14:31 02/06/2026
+
+![image-25](/logs/image-25.png)
+
+"In Requirement 1 of report.md, do for me 2 tasks:
+  - Basded on the posting 01 format, format the other postings.
+  - Using chrome-devtools-mcp@latest to copy the whole job description for each posting.
+  - I allow chrome-devtools-mcp@latest to open new tabs and take screenshots."
+
+
+22:58 02/06/2025
+
+"In the Requirement 1 section of report.md, using chrome-devtools-mcp@latest, visit all the websites of the jobs to copy the full job description and put them into quotation (>). Reformat other jobs section to be similar as the posting 01."
+
+![alt text](image-26.png)
+
 ---
 
 ## 4. Requirement 2
