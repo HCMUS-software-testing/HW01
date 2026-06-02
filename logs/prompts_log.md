@@ -287,6 +287,26 @@ Multimodal AI products drive demand for specialized QA (audio/video/text), not o
 ### Evidence
 ![alt text](req1-images/req1-linkedin-posting-10.png)
 
+
+
+## Formatting
+
+14:31 02/06/2026
+
+![image-25](/logs/image-25.png)
+
+"In Requirement 1 of report.md, do for me 2 tasks:
+  - Basded on the posting 01 format, format the other postings.
+  - Using chrome-devtools-mcp@latest to copy the whole job description for each posting.
+  - I allow chrome-devtools-mcp@latest to open new tabs and take screenshots."
+
+
+22:58 02/06/2025
+
+"In the Requirement 1 section of report.md, using chrome-devtools-mcp@latest, visit all the websites of the jobs to copy the full job description and put them into quotation (>). Reformat other jobs section to be similar as the posting 01."
+
+![alt text](image-26.png)
+
 ---
 
 ## 4. Requirement 2
@@ -493,3 +513,55 @@ Be aware of the AI Collaboration Protocol. Because you requested me to generate 
 ![alt text](image-22.png)
 ![alt text](image-23.png)
 ![alt text](image-24.png)
+
+---
+
+00:05 03/06/2026
+
+❯ For Requirement 3 of my Software Testing assignment, please generate 15 test cases for a physical product: a domestic fan from
+  the brand "Lifan".
+  
+  Product Specification:
+  - It has 4 physical buttons for wind speed control: 0 (Stop) - 1 (Low) - 2 (Medium) - 3 (High).
+  - At the center of the front case, there is a physical knob to turn on/off and adjust the wind direction/rotation speed
+  (rotational louver).
+
+  Formatting Requirements:
+  - Please output the test cases strictly using the following Markdown template 
+  templates\hw01-physical-device-test-cases-template.md. 
+  - Ensure the section is numbered under headings matching standard report documentation style.
+  - Focus on functional, usability, and physical safety test cases.
+
+  ![alt text](image-27.png)
+
+## 3) Requirement 3 — Test Cases for ONE Physical Product (40 pts)
+
+### 3.1 Device Declaration
+- Device type: Domestic fan with physical speed buttons and rotational louver knob
+- Brand: Lifan
+- Model: `<not specified>`
+- Year: `<not specified>`
+- Serial number (masked middle 4 chars): `<not available>`
+
+### 3.2 Required Device Evidence
+- Device photo + student ID in same frame: `<file path>`
+
+### 3.3 Test Cases (15 total)
+
+| TC ID | Objective | Input / Preconditions | Steps | Expected Result | Actual Result | Verdict (Pass/Fail) | Edge Case? (Y/N) | AI Generated? (Y/N) | Notes |
+|---|---|---|---|---|---|---|---|---|---|
+| TC-01 | Verify Stop button turns fan off | Fan plugged in. Button 1, 2, or 3 is active. | 1. Turn fan on at any speed. 2. Press button 0. 3. Observe blades and airflow. | Fan motor stops. No airflow. Speed button 0 remains selected. |  |  | N | Y | Functional |
+| TC-02 | Verify Low speed button works | Fan plugged in. Fan is stopped. | 1. Press button 1. 2. Observe blade movement and airflow. | Fan starts at low speed. Airflow is weak but stable. No abnormal noise. |  |  | N | Y | Functional |
+| TC-03 | Verify Medium speed button works | Fan plugged in. Fan is stopped. | 1. Press button 2. 2. Observe blade movement and airflow. | Fan starts at medium speed. Airflow is stronger than Low. No abnormal noise. |  |  | N | Y | Functional |
+| TC-04 | Verify High speed button works | Fan plugged in. Fan is stopped. | 1. Press button 3. 2. Observe blade movement and airflow. | Fan starts at high speed. Airflow is strongest. Fan remains stable. |  |  | N | Y | Functional / Safety |
+| TC-05 | Verify speed changes from Low to Medium to High | Fan plugged in. Fan is stopped. | 1. Press button 1. 2. Press button 2. 3. Press button 3. 4. Compare airflow after each press. | Fan changes speed according to selected button. Airflow increases from Low to Medium to High. |  |  | N | Y | Functional |
+| TC-06 | Verify speed changes from High to Medium to Low | Fan plugged in. Fan running at High speed. | 1. Press button 2. 2. Press button 1. 3. Observe airflow and noise. | Fan decreases speed correctly. No sudden stop, vibration, or abnormal sound. |  |  | N | Y | Functional |
+| TC-07 | Verify pressing Stop while fan is at High speed | Fan plugged in. Fan running at High speed. | 1. Press button 3. 2. Wait until stable. 3. Press button 0. 4. Observe stopping behavior. | Fan stops safely. Blades slow down normally. No spark, burning smell, or sudden mechanical issue. |  |  | Y | Y | Physical safety edge case |
+| TC-08 | Verify only one speed button can stay selected | Fan plugged in. | 1. Press button 1. 2. Press button 2. 3. Press button 3. 4. Check physical button states. | Only the last selected speed button remains active. Previous button releases or becomes inactive. |  |  | N | Y | Usability / Functional |
+| TC-09 | Verify rotational louver knob turns wind direction rotation on | Fan plugged in. Fan running at Low/Medium/High speed. | 1. Press button 2. 2. Turn center knob to rotation ON position. 3. Observe front louver movement. | Rotational louver starts rotating. Wind direction changes smoothly. |  |  | N | Y | Functional |
+| TC-10 | Verify rotational louver knob turns wind direction rotation off | Fan plugged in. Fan running. Louver rotation is ON. | 1. Turn center knob to OFF position. 2. Observe louver movement. | Rotational louver stops rotating. Fan continues blowing at selected speed. |  |  | N | Y | Functional |
+| TC-11 | Verify louver rotation speed adjustment by knob | Fan plugged in. Fan running. Knob supports adjustable rotation speed. | 1. Turn knob slowly from low rotation setting to higher setting. 2. Observe louver rotation speed. | Louver rotation speed changes according to knob position. Movement remains smooth. |  |  | N | Y | Functional / Usability |
+| TC-12 | Verify louver knob behavior when fan speed is 0 | Fan plugged in. Speed button 0 selected. | 1. Press button 0. 2. Turn louver knob ON. 3. Observe fan blades and louver. | Fan blades stay stopped. Louver should not rotate if main motor power is off, or should behave according to product design without unsafe movement. |  |  | Y | Y | Edge case: knob ON while fan stopped |
+| TC-13 | Verify buttons are easy to press and labels are understandable | Fan placed on normal use surface. | 1. Inspect button labels 0, 1, 2, 3. 2. Press each button once. 3. Observe tactile feedback. | Labels are visible and understandable. Buttons are not too hard to press. User can identify Stop/Low/Medium/High easily. |  |  | N | Y | Usability |
+| TC-14 | Verify fan remains physically stable at High speed with louver rotation ON | Fan plugged in. Placed on flat surface. | 1. Press button 3. 2. Turn louver knob ON/high rotation. 3. Observe fan body for 1 minute. | Fan does not shake excessively, fall, or move from position. No unsafe vibration. |  |  | Y | Y | Physical safety edge case |
+| TC-15 | Verify front case/grill prevents finger contact with moving blades | Fan plugged in. Fan running at Low speed. Use safe non-body object only. | 1. Visually inspect front grill spacing. 2. Use a thin safe test object near grill without forcing it. 3. Do not insert fingers. | Grill prevents accidental contact with moving blades during normal use. No sharp edges on front case. |  |  | Y | Y | Physical safety. Do not use fingers. |
