@@ -1,8 +1,11 @@
-## 1. Requirements analysis
+# 1. Requirements analysis
 
+## Prompt
 15:27 01/06/2026
 
 ![alt text](image-5.png)
+
+## Output
 
 ![alt text](image-6.png)
 
@@ -18,19 +21,273 @@
 
 ![alt text](image-12.png)
 
-## 2. Markdown templates generated
+# 2. Markdown templates generated
 
+## Prompt
 15:38 01/06/2026
 
 "Use document-skills, from pdf files in requirements/ folder, create all the template markdowns that are needed in this project. Place the templates in the folder templates/ "
 
 ![alt text](image.png)
 
-- Jobs list table contains too much columnss => Reduce manually.
+## Output
 
+![alt text](image-30.png)
+
+# 3. Updated job postings template
+
+## Prompt
+15:40 01/06/2026
 ![alt text](image-1.png)
 
-## 3. Requirement 1
+## Output
+
+# HW01 Requirement 1 — Job Postings Template (Section-Based)
+
+> Based on Requirement 1 in `requirements/2026.HW01.Jobs.Defects.PhysicalProduct_En.pdf`.
+>
+> Rules:
+> - Collect **10 QA/QC job postings**
+> - Each posting must be published **within 60 days** before submission date
+> - At least **3 postings require AI/LLM/automation-AI skills**
+> - Each posting must include: **link, dated screenshot, job description, required skills, salary**
+> - Add **1–2 sentences AI Impact Analysis** per posting
+> - Screenshot must show your logged-in account/display name
+
+---
+
+## Posting 01
+- Job title:
+- Company:
+- Location:
+- Platform (LinkedIn/Indeed/...):
+- Posting date:
+- Job URL:
+- Salary:
+- Requires AI/LLM/automation-AI skills? (Y/N):
+
+### Job Description
+
+### Required Skills
+
+### AI Impact Analysis (1–2 sentences)
+
+### Evidence
+- Dated screenshot path/link:
+- Screenshot includes your account/display name? (Y/N):
+
+---
+
+## Posting 02
+- Job title:
+- Company:
+- Location:
+- Platform (LinkedIn/Indeed/...):
+- Posting date:
+- Job URL:
+- Salary:
+- Requires AI/LLM/automation-AI skills? (Y/N):
+
+### Job Description
+
+### Required Skills
+
+### AI Impact Analysis (1–2 sentences)
+
+### Evidence
+- Dated screenshot path/link:
+- Screenshot includes your account/display name? (Y/N):
+
+---
+
+## Posting 03
+- Job title:
+- Company:
+- Location:
+- Platform (LinkedIn/Indeed/...):
+- Posting date:
+- Job URL:
+- Salary:
+- Requires AI/LLM/automation-AI skills? (Y/N):
+
+### Job Description
+
+### Required Skills
+
+### AI Impact Analysis (1–2 sentences)
+
+### Evidence
+- Dated screenshot path/link:
+- Screenshot includes your account/display name? (Y/N):
+
+---
+
+## Posting 04
+- Job title:
+- Company:
+- Location:
+- Platform (LinkedIn/Indeed/...):
+- Posting date:
+- Job URL:
+- Salary:
+- Requires AI/LLM/automation-AI skills? (Y/N):
+
+### Job Description
+
+### Required Skills
+
+### AI Impact Analysis (1–2 sentences)
+
+### Evidence
+- Dated screenshot path/link:
+- Screenshot includes your account/display name? (Y/N):
+
+---
+
+## Posting 05
+- Job title:
+- Company:
+- Location:
+- Platform (LinkedIn/Indeed/...):
+- Posting date:
+- Job URL:
+- Salary:
+- Requires AI/LLM/automation-AI skills? (Y/N):
+
+### Job Description
+
+### Required Skills
+
+### AI Impact Analysis (1–2 sentences)
+
+### Evidence
+- Dated screenshot path/link:
+- Screenshot includes your account/display name? (Y/N):
+
+---
+
+## Posting 06
+- Job title:
+- Company:
+- Location:
+- Platform (LinkedIn/Indeed/...):
+- Posting date:
+- Job URL:
+- Salary:
+- Requires AI/LLM/automation-AI skills? (Y/N):
+
+### Job Description
+
+### Required Skills
+
+### AI Impact Analysis (1–2 sentences)
+
+### Evidence
+- Dated screenshot path/link:
+- Screenshot includes your account/display name? (Y/N):
+
+---
+
+## Posting 07
+- Job title:
+- Company:
+- Location:
+- Platform (LinkedIn/Indeed/...):
+- Posting date:
+- Job URL:
+- Salary:
+- Requires AI/LLM/automation-AI skills? (Y/N):
+
+### Job Description
+
+### Required Skills
+
+### AI Impact Analysis (1–2 sentences)
+
+### Evidence
+- Dated screenshot path/link:
+- Screenshot includes your account/display name? (Y/N):
+
+---
+
+## Posting 08
+- Job title:
+- Company:
+- Location:
+- Platform (LinkedIn/Indeed/...):
+- Posting date:
+- Job URL:
+- Salary:
+- Requires AI/LLM/automation-AI skills? (Y/N):
+
+### Job Description
+
+### Required Skills
+
+### AI Impact Analysis (1–2 sentences)
+
+### Evidence
+- Dated screenshot path/link:
+- Screenshot includes your account/display name? (Y/N):
+
+---
+
+## Posting 09
+- Job title:
+- Company:
+- Location:
+- Platform (LinkedIn/Indeed/...):
+- Posting date:
+- Job URL:
+- Salary:
+- Requires AI/LLM/automation-AI skills? (Y/N):
+
+### Job Description
+
+### Required Skills
+
+### AI Impact Analysis (1–2 sentences)
+
+### Evidence
+- Dated screenshot path/link:
+- Screenshot includes your account/display name? (Y/N):
+
+---
+
+## Posting 10
+- Job title:
+- Company:
+- Location:
+- Platform (LinkedIn/Indeed/...):
+- Posting date:
+- Job URL:
+- Salary:
+- Requires AI/LLM/automation-AI skills? (Y/N):
+
+### Job Description
+
+### Required Skills
+
+### AI Impact Analysis (1–2 sentences)
+
+### Evidence
+- Dated screenshot path/link:
+- Screenshot includes your account/display name? (Y/N):
+
+---
+
+## Requirement 1 Validation Checklist
+- [ ] 10/10 postings completed
+- [ ] all posting dates are within 60 days before submission
+- [ ] at least 3 postings require AI/LLM/automation-AI skills
+- [ ] every posting includes link, dated screenshot, job description, required skills, salary
+- [ ] every posting includes AI Impact Analysis (1–2 sentences)
+- [ ] every screenshot shows your account/display name
+
+
+# 4. Requirement 1
+
+## Prompt
 
 16:12 01/06/2026
 
@@ -39,6 +296,8 @@
 ![alt text](image-3.png)
 
 ![alt text](image-4.png)
+
+## Output
 
 ## 1) Requirement 1 — QA/QC Job Market 2026+ (40 pts)
 
@@ -289,7 +548,9 @@ Multimodal AI products drive demand for specialized QA (audio/video/text), not o
 
 
 
-## Formatting
+# 5. Reformatting Requirement 1
+
+## Prompt
 
 14:31 02/06/2026
 
@@ -300,222 +561,18 @@ Multimodal AI products drive demand for specialized QA (audio/video/text), not o
   - Using chrome-devtools-mcp@latest to copy the whole job description for each posting.
   - I allow chrome-devtools-mcp@latest to open new tabs and take screenshots."
 
+# 6. Copy exact jd
 
+## Prompt
 22:58 02/06/2025
 
 "In the Requirement 1 section of report.md, using chrome-devtools-mcp@latest, visit all the websites of the jobs to copy the full job description and put them into quotation (>). Reformat other jobs section to be similar as the posting 01."
 
 ![alt text](image-26.png)
 
----
+# 7. Req 3: Testcases generated
 
-## 4. Requirement 2
-
-
-### Prompt
-
-00:05 02/06/2026
-
->"From the two PDF files I provided, identify 20 real software defects that occurred between 2022 and 2026 >and can be used to complete Requirement 2 in the file 2026.HW01.Jobs.Defects.PhysicalProduct_En.pdf. >Ensure that all assignment requirements and constraints are strictly followed."
-
-![alt text](image-13.png)
-
-### Response
-
-Based on the assignment guidelines provided in your documents, Requirement 2 requires you to research and document 20 real-world software defects publicized between 2022 and 2026. Out of these, at least 5 must be related to AI/LLM vulnerabilities such as hallucination, prompt injection, or bias.
-
-For each defect, you must provide the source link, description, severity, consequences, and a solution. Furthermore, a new and critical constraint requires you to document one instance where an AI hallucinates or shows bias when asked to explain each of the 20 defects.
-
-Below is the comprehensively researched list of 20 software defects fulfilling all of your assignment constraints.
-
-### Part 1: AI/LLM-Related Defects (5 Mandatory Defects)
-
-#### 1. Air Canada Chatbot Policy Hallucination (2023)
-* **Source Link:** https://www.bbc.com/news/world-us-canada-68302211
-* **Description:** Air Canada's customer service chatbot hallucinated a non-existent bereavement fare policy, promising a customer a retroactive refund. 
-* **Severity:** High (Reputational and Legal)
-* **Consequences:** The customer was initially denied the refund. A Canadian civil resolution tribunal later forced Air Canada to honor the chatbot's fabricated promise, stating the airline is responsible for all information on its website.
-* **Solution:** Implement strict Retrieval-Augmented Generation (RAG) guardrails, ensuring chatbots only output explicitly verified policy text, or remove chatbots from handling definitive financial policy queries.
-* **AI Bias/Hallucination when explaining:** *When prompted to explain this defect, an AI might hallucinate that the tribunal ruled in favor of Air Canada by citing standard "Terms of Service" protection, which is false.*
-
-#### 2. Mata v. Avianca - ChatGPT Fake Legal Citations (2023)
-* **Source Link:** https://www.nytimes.com/2023/05/27/nyregion/avianca-airline-chatgpt-fake-cases.html
-* **Description:** A lawyer used ChatGPT to prepare a legal brief. ChatGPT completely hallucinated fake judicial decisions, citations, and internal quotes.
-* **Severity:** Critical (Legal/Professional)
-* **Consequences:** The lawyers were sanctioned by the federal judge, fined, and faced severe professional embarrassment, highlighting the dangers of using generative AI for factual legal research.
-* **Solution:** Legal professionals must independently verify all AI-generated citations using established legal databases (like Westlaw or LexisNexis).
-* **AI Bias/Hallucination when explaining:** *An AI might display bias by attempting to shift the blame entirely onto the court system's lack of AI guidelines, rather than the user's failure to verify the generated text.*
-
-#### 3. Google Gemini Historical Image Generation Bias (2024)
-* **Source Link:** https://www.theverge.com/2024/2/21/24079371/google-gemini-black-nazi-soldiers-history-inaccurate
-* **Description:** Google's Gemini image generator heavily over-corrected for diversity, generating historically inaccurate images (e.g., depicting 1940s German soldiers or America's Founding Fathers as people of color).
-* **Severity:** Medium (Reputational)
-* **Consequences:** Public backlash forced Google to temporarily disable the ability to generate images of people while they retrained the safety and prompt-injection filters.
-* **Solution:** Refine the underlying system prompts to balance diversity injections with historical context and factual accuracy constraints.
-* **AI Bias/Hallucination when explaining:** *When asked about this, an AI might hallucinate that the issue was caused by malicious users hacking the prompt system, rather than an intentional (but poorly implemented) diversity guardrail by the developers.*
-
-#### 4. Chevrolet Tahoe Chatbot $1 Prompt Injection (2023)
-* **Source Link:** https://techcrunch.com/2023/12/18/gm-dealership-chatbot-agrees-to-sell-2024-chevy-tahoe-for-1/
-* **Description:** A dealership integrated an AI chatbot on its website. Users used "prompt injection" techniques to command the AI to agree to legally binding statements, resulting in the bot agreeing to sell a 2024 Chevy Tahoe for $1.
-* **Severity:** High (Financial/Security)
-* **Consequences:** The dealership had to quickly pull the chatbot offline to prevent potential legal liabilities regarding false advertising and verbal contracts.
-* **Solution:** Isolate customer-facing LLMs from making transactional commitments and employ secondary AI safety layers to detect and block prompt injection techniques (e.g., "ignore all previous instructions").
-* **AI Bias/Hallucination when explaining:** *An AI might hallucinate that the dealership actually honored the $1 sale, fabricating a story about a massive financial loss.*
-
-#### 5. NEDA "Tessa" Chatbot Harmful Advice (2023)
-* **Source Link:** https://www.npr.org/2023/06/08/1181180470/eating-disorder-helpline-chatbot-tessa
-* **Description:** The National Eating Disorders Association (NEDA) replaced human helpline workers with a chatbot named Tessa. Tessa hallucinated and provided dangerous weight-loss advice to individuals suffering from eating disorders.
-* **Severity:** Critical (Health and Safety)
-* **Consequences:** NEDA was forced to take the chatbot offline just days after launch due to public outcry and the severe psychological risk posed to vulnerable users.
-* **Solution:** Health-related AI bots must use deterministic, rule-based responses for critical advice rather than generative text to ensure clinical safety.
-* **AI Bias/Hallucination when explaining:** *An AI might exhibit bias by defending the chatbot, claiming its advice was "medically accurate for general fitness" while ignoring the critical context that the users were eating disorder patients.*
-
----
-
-### Part 2: Traditional Software Defects (15 Defects)
-
-#### 6. CrowdStrike Falcon Update BSOD (July 2024)
-* **Source Link:** https://www.wired.com/story/crowdstrike-outage-update-windows/
-* **Description:** A flawed sensor configuration update pushed by CrowdStrike caused millions of Windows machines globally to crash into a Blue Screen of Death (BSOD).
-* **Severity:** Critical 
-* **Consequences:** Grounded airlines, halted hospital surgeries, and disrupted banking systems worldwide for days.
-* **Solution:** Staggered rollout deployments (canary releases) and stricter kernel-level driver testing before pushing updates to global production.
-* **AI Bias/Hallucination when explaining:** *AI frequently hallucinates that Microsoft created the faulty update, unfairly blaming the OS vendor rather than the third-party security software (CrowdStrike).*
-
-#### 7. FAA NOTAM System Outage (January 2023)
-* **Source Link:** https://www.reuters.com/business/aerospace-defense/us-faa-says-flight-personnel-notice-system-not-processing-updates-2023-01-11/
-* **Description:** The FAA’s Notice to Air Missions (NOTAM) system failed because contractors accidentally deleted crucial files while synchronizing primary and backup databases.
-* **Severity:** Critical
-* **Consequences:** Over 10,000 flights were delayed and 1,300 canceled across the United States in a single day.
-* **Solution:** Implement strict access controls, automated database rollback capabilities, and failsafe isolation between primary and backup databases.
-* **AI Bias/Hallucination when explaining:** *AI might hallucinate that the outage was the result of a coordinated nation-state cyberattack rather than a simple database synchronization error by internal staff.*
-
-#### 8. Southwest Airlines Scheduling Meltdown (December 2022)
-* **Source Link:** https://www.cnn.com/2022/12/27/business/southwest-airlines-cancellations-meltdown/index.html
-* **Description:** Southwest's legacy point-and-click crew scheduling software ("SkySolver") became overwhelmed during a winter storm, unable to match crews to delayed planes.
-* **Severity:** High
-* **Consequences:** Over 16,000 flights canceled, costing the airline over $800 million and resulting in massive reputational damage and federal investigations.
-* **Solution:** Modernize legacy core systems with scalable cloud infrastructure and dynamic, automated optimization algorithms.
-* **AI Bias/Hallucination when explaining:** *AI might show bias by blaming the frontline airline workers for going on strike, rather than identifying the legacy software limitation.*
-
-#### 9. Toyota Production Halt (August 2023)
-* **Source Link:** https://www.bloomberg.com/news/articles/2023-09-06/toyota-says-plant-shutdown-caused-by-server-running-out-of-space
-* **Description:** Toyota had to halt operations at all 14 of its domestic assembly plants because a database server ran out of disk space during routine maintenance.
-* **Severity:** High
-* **Consequences:** A temporary halt of a massive global supply chain, causing production delays.
-* **Solution:** Implement automated infrastructure monitoring and alerts for disk storage thresholds, alongside dynamic volume expansion.
-* **AI Bias/Hallucination when explaining:** *AI often hallucinates that Toyota was hit by a ransomware attack, assuming a malicious cause for the factory shutdown.*
-
-#### 10. AT&T Network Outage (February 2024)
-* **Source Link:** https://www.cnn.com/2024/02/22/tech/att-cell-service-outage/index.html
-* **Description:** An internal software update caused a massive cellular network disruption.
-* **Severity:** High
-* **Consequences:** Millions of customers lost voice and data service for hours, and some users were unable to reach 911 emergency services.
-* **Solution:** Enhance pre-deployment network simulation testing and automated rollback scripts if network health metrics drop upon an update.
-* **AI Bias/Hallucination when explaining:** *An AI might hallucinate that solar flares or a geomagnetic storm caused the outage, ignoring the software update root cause.*
-
-#### 11. Microsoft Exchange "Y2K22" Bug (January 2022)
-* **Source Link:** https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-year-2022-bug-in-fip-fs-breaks-email-delivery/
-* **Description:** A date formatting variable in Microsoft Exchange's malware scanning engine (FIP-FS) was limited to a 32-bit integer. When the date hit 2201010001 (Jan 1, 2022), it exceeded the maximum integer value, crashing the engine.
-* **Severity:** High
-* **Consequences:** Stopped email delivery globally for on-premise Exchange servers as emails became stuck in the transport queues.
-* **Solution:** Change the variable data type to a 64-bit integer (Int64) to handle larger date-time string conversions.
-* **AI Bias/Hallucination when explaining:** *AI might confuse this with the year 2000 "Y2K" bug, hallucinating that this bug caused massive banking failures rather than just affecting email queues.*
-
-#### 12. MOVEit Transfer Zero-Day Vulnerability (May 2023)
-* **Source Link:** https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-158a
-* **Description:** A severe SQL injection vulnerability in Progress Software's MOVEit Transfer application allowed unauthorized access to databases.
-* **Severity:** Critical
-* **Consequences:** The Clop ransomware gang exploited this to steal data from thousands of organizations, compromising the data of over 60 million individuals.
-* **Solution:** Enforce parameterized queries for all database interactions to prevent SQL injection, alongside strict vendor security auditing.
-* **AI Bias/Hallucination when explaining:** *AI might show bias by blaming end-users for creating weak passwords, failing to understand that SQL injection bypasses password authentication entirely.*
-
-#### 13. Optus API Data Breach (September 2022)
-* **Source Link:** https://www.theguardian.com/business/2022/sep/23/optus-cyber-attack-data-breach-australia-telecoms
-* **Description:** Australian telecom Optus left an API endpoint unauthenticated and publicly accessible, exposing customer data.
-* **Severity:** Critical
-* **Consequences:** Personal details (passports, driver's licenses) of nearly 10 million Australians were exposed, leading to class-action lawsuits and government intervention.
-* **Solution:** Enforce strict API gateway authentication (e.g., OAuth 2.0) and conduct regular penetration testing on external endpoints.
-* **AI Bias/Hallucination when explaining:** *AI might hallucinate the scale of the breach, falsely claiming that financial records and credit card numbers were stolen when it was primarily identity data.*
-
-#### 14. Uber MFA Fatigue Attack (September 2022)
-* **Source Link:** https://www.bleepingcomputer.com/news/security/uber-hacked-internal-systems-breached-and-vulnerability-reports-stolen/
-* **Description:** An attacker gained internal access to Uber's systems by spamming an employee with Multi-Factor Authentication (MFA) requests until the exhausted employee finally clicked "Accept."
-* **Severity:** High
-* **Consequences:** The attacker gained administrative access to AWS, Google Workspace, and internal Slack channels.
-* **Solution:** Implement "number matching" for MFA (where the user must type a number shown on the login screen into their phone) and rate-limit MFA prompts.
-* **AI Bias/Hallucination when explaining:** *AI might hallucinate that Uber's internal firewalls were breached via a complex zero-day exploit, overcomplicating the simple social engineering root cause.*
-
-#### 15. LastPass Vault Breach (2022)
-* **Source Link:** https://blog.lastpass.com/2022/12/notice-of-recent-security-incident/
-* **Description:** Threat actors hacked a LastPass developer's home computer to steal source code, which they later used to pivot and steal encrypted customer password vaults from cloud storage.
-* **Severity:** Critical
-* **Consequences:** Massive loss of trust in the password manager; users were forced to change all stored passwords due to the risk of offline brute-forcing.
-* **Solution:** Implement stricter Zero Trust architecture, separate development environments from production data, and mandate hardware security keys for developer access.
-* **AI Bias/Hallucination when explaining:** *AI often hallucinates that LastPass stored master passwords in plain text and that all user passwords were immediately readable by the hackers.*
-
-#### 16. British Airways IT Outage (May 2023)
-* **Source Link:** https://www.reuters.com/business/aerospace-defense/british-airways-cancels-flights-due-it-issue-2023-05-25/
-* **Description:** A software issue caused a major failure in the airline’s flight communication and IT systems.
-* **Severity:** High
-* **Consequences:** Over 175 flights were canceled, leaving tens of thousands of passengers stranded over a holiday weekend.
-* **Solution:** Enhance IT infrastructure redundancy and improve the failover mechanisms to backup communication systems.
-* **AI Bias/Hallucination when explaining:** *AI might hallucinate that the outage was caused by an employee labor strike, conflating IT issues with human resource disputes.*
-
-#### 17. 23andMe Credential Stuffing (October 2023)
-* **Source Link:** https://www.wired.com/story/23andme-credential-stuffing-data-breach/
-* **Description:** Attackers used passwords leaked from other sites to log into 23andMe accounts. Because of the "DNA Relatives" software feature, compromising one account exposed the data of thousands of relatives.
-* **Severity:** High
-* **Consequences:** Data of 6.9 million users was scraped and sold on the dark web, leading to massive privacy lawsuits.
-* **Solution:** Force mandatory Two-Factor Authentication (2FA) for all users and rate-limit the data exposure in the DNA Relatives feature.
-* **AI Bias/Hallucination when explaining:** *AI might exhibit bias by claiming 23andMe deliberately sold the genetic data to the hackers, hallucinating malicious intent by the company.*
-
-#### 18. Honda Rolling-PWN Flaw (2022)
-* **Source Link:** https://www.vice.com/en/article/y3p35w/hackers-detail-how-to-start-hondas-remotely-with-rolling-pwn-exploit
-* **Description:** A flaw in the rolling code system of Honda's keyless entry allowed researchers to intercept and replay codes to unlock and start modern Honda vehicles.
-* **Severity:** Medium
-* **Consequences:** Increased risk of vehicle theft, requiring physical hardware recalls/updates to patch.
-* **Solution:** Implement strict synchronization checks in the rolling code algorithm to instantly invalidate previously used or out-of-sequence codes.
-* **AI Bias/Hallucination when explaining:** *An AI might hallucinate that hackers used this flaw to remotely drive the cars away using self-driving features, which the vulnerability does not allow.*
-
-#### 19. AnyDesk Production Breach (February 2024)
-* **Source Link:** https://www.bleepingcomputer.com/news/security/anydesk-says-hackers-breached-its-production-servers-reset-passwords/
-* **Description:** Hackers breached AnyDesk’s production systems, compromising source code and private code-signing keys.
-* **Severity:** Critical
-* **Consequences:** AnyDesk had to revoke security certificates, replace code-signing keys, and force password resets for all web portal users, risking supply chain attacks on their customers.
-* **Solution:** Secure code-signing keys in hardware security modules (HSMs) and strictly compartmentalize production build environments.
-* **AI Bias/Hallucination when explaining:** *AI might hallucinate that all end-user computers with AnyDesk installed were automatically infected with ransomware as a result.*
-
-#### 20. Nissan Cloud Misconfiguration (2023)
-* **Source Link:** https://www.securityweek.com/nissan-north-america-data-breach-impacts-100000/
-* **Description:** A third-party software vendor for Nissan left a cloud database misconfigured and publicly accessible without authentication.
-* **Severity:** Medium
-* **Consequences:** Customer data (names, dates of birth, loan information) for nearly 100,000 individuals was exposed.
-* **Solution:** Implement automated cloud posture management (CSPM) tools to detect and block publicly exposed storage buckets.
-* **AI Bias/Hallucination when explaining:** *An AI might explicitly hallucinate the exact cloud provider (e.g., falsely insisting it was AWS S3 when it was Azure Blob), or invent fake data points like "medical records" being leaked.*
-
----
-
-### AI Collaboration & Compliance Protocol Notice
-As this artifact was generated through interaction with an AI assistant, it falls under the mandatory documentation rules. Ensure you log this in your **[AI-02] AI Audit Report** across all 5 standard components (Prompt with Timestamp, Full raw AI output, Audit Verdict based on Course Materials, Justification, and Student Corrections). Ensure your submitted ZIP archive file follows the naming pattern `StudentID_HW01_AI_<grade>.zip`.
-
-Important Assignment Reminder:
-Be aware of the AI Collaboration Protocol. Because you requested me to generate this list (which counts as an AI-generated artifact), you are required to document this interaction in your AI Audit Report [AI-02]. You must include my full output, your verdict, and how you verified these defects. Furthermore, you must append the Mandatory Disclosure at the end of your report and ensure your final submission ZIP file contains your prompt log with timestamps. Failure to follow these compliance steps will forfeit the entire 15-20 points for the 'AI Compliance' section.
-
-![alt text](image-14.png)
-![alt text](image-15.png)
-![alt text](image-16.png)
-![alt text](image-17.png)
-![alt text](image-18.png)
-![alt text](image-19.png)
-![alt text](image-20.png)
-![alt text](image-21.png)
-![alt text](image-22.png)
-![alt text](image-23.png)
-![alt text](image-24.png)
-
----
-
+## Prompt
 00:05 03/06/2026
 
 ❯ For Requirement 3 of my Software Testing assignment, please generate 15 test cases for a physical product: a domestic fan from
@@ -533,6 +590,8 @@ Be aware of the AI Collaboration Protocol. Because you requested me to generate 
   - Focus on functional, usability, and physical safety test cases.
 
   ![alt text](image-27.png)
+
+## Output
 
 ## 3) Requirement 3 — Test Cases for ONE Physical Product (40 pts)
 
@@ -566,9 +625,193 @@ Be aware of the AI Collaboration Protocol. Because you requested me to generate 
 | TC-14 | Verify fan remains physically stable at High speed with louver rotation ON | Fan plugged in. Placed on flat surface. | 1. Press button 3. 2. Turn louver knob ON/high rotation. 3. Observe fan body for 1 minute. | Fan does not shake excessively, fall, or move from position. No unsafe vibration. |  |  | Y | Y | Physical safety edge case |
 | TC-15 | Verify front case/grill prevents finger contact with moving blades | Fan plugged in. Fan running at Low speed. Use safe non-body object only. | 1. Visually inspect front grill spacing. 2. Use a thin safe test object near grill without forcing it. 3. Do not insert fingers. | Grill prevents accidental contact with moving blades during normal use. No sharp edges on front case. |  |  | Y | Y | Physical safety. Do not use fingers. |
 
-# Rewrite skills + ai impact
+# 8. Req 1: Rewrite skills + ai impact
 
+## Prompt 
 15:35 03/06/2026
 
 "In requirement 01 of report.md, for each job, based on the job description, rewrite the Required skills and AI Impact Analysis."
 ![alt text](image-28.png)
+
+# 9. Format testcases table
+
+## Prompt
+
+16:08 03/06/2026
+"The table in section 3.3 Test Cases of report.md. Ensure in each sell, between sentence, add a breakline \<br\>."
+![alt text](image-29.png)
+
+## Output
+
+| **TC ID** |                                **Objective**                               |                         **Input / Preconditions**                        |                                                             **Steps**                                                            |                                                                 **Expected Result**                                                                 | **Actual Result** | **Verdict (Pass/Fail)** |
+|:---------:|:--------------------------------------------------------------------------:|:------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------:|:-----------------------:|
+| **TC-01** | Verify Stop button turns fan off                                           | Fan plugged in.<br> Button 1, 2, or 3 is active.                         | 1. Turn fan on at any speed.<br> 2. Press button 0.<br> 3. Observe blades and airflow.                                           | Fan motor stops.<br> No airflow.                                                                                                                    |                   |                         |
+| **TC-02** | Verify Low speed button works                                              | Fan plugged in.<br> Fan is stopped.                                      | 1. Press button 1.<br> 2. Observe blade movement and airflow.                                                                    | Fan starts at low speed.<br> Airflow is weak but stable.<br> No abnormal noise.                                                                     |                   |                         |
+| **TC-03** | Verify Medium speed button works                                           | Fan plugged in.<br> Fan is stopped.                                      | 1. Press button 2.<br> 2. Observe blade movement and airflow.                                                                    | Fan starts at medium speed.<br> Airflow is stronger than Low.<br> No abnormal noise.                                                                |                   |                         |
+| **TC-04** | Verify High speed button works                                             | Fan plugged in.<br> Fan is stopped.                                      | 1. Press button 3.<br> 2. Observe blade movement and airflow.                                                                    | Fan starts at high speed.<br> Airflow is strongest.<br> Fan remains stable.                                                                         |                   |                         |
+| **TC-05** | Verify speed changes from Low to Medium to High                            | Fan plugged in.<br> Fan is stopped.                                      | 1. Press button 1.<br> 2. Press button 2.<br> 3. Press button 3.<br> 4. Compare airflow after each press.                        | Fan changes speed according to selected button.<br> Airflow increases from Low to Medium to High.                                                   |                   |                         |
+| **TC-06** | Verify speed changes from High to Medium to Low                            | Fan plugged in.<br> Fan running at High speed.                           | 1. Press button 2.<br> 2. Press button 1.<br> 3. Observe airflow and noise.                                                      | Fan decreases speed correctly.<br> No sudden stop, vibration, or abnormal sound.                                                                    |                   |                         |
+| **TC-07** | Verify pressing Stop while fan is at High speed                            | Fan plugged in.<br> Fan running at High speed.                           | 1. Press button 3.<br> 2. Wait until stable.<br> 3. Press button 0.<br> 4. Observe stopping behavior.                            | Fan stops safely.<br> Blades slow down normally.<br> No spark, burning smell, or sudden mechanical issue.                                           |                   |                         |
+| **TC-08** | Verify only one speed button can stay selected                             | Fan plugged in.                                                          | 1. Press button 1.<br> 2. Press button 2.<br> 3. Press button 3.<br> 4. Check physical button states.                            | Only the last selected speed button remains active.<br> Previous button releases or becomes inactive.                                               |                   |                         |
+| **TC-09** | Verify rotational louver knob turns wind direction rotation on             | Fan plugged in.<br> Fan running at Low/Medium/High speed.                | 1. Press button 2.<br> 2. Turn center knob to rotation ON position.<br> 3. Observe front louver movement.                        | Rotational louver starts rotating.<br> Wind direction changes smoothly.                                                                             |                   |                         |
+| **TC-10** | Verify rotational louver knob turns wind direction rotation off            | Fan plugged in.<br> Fan running.<br> Louver rotation is ON.              | 1. Turn center knob to OFF position.<br> 2. Observe louver movement.                                                             | Rotational louver stops rotating.<br> Fan continues blowing at selected speed.                                                                      |                   |                         |
+| **TC-11** | Verify louver rotation speed adjustment by knob                            | Fan plugged in.<br> Fan running.<br> Knob supports adjustable rotation speed. | 1. Turn knob slowly from low rotation setting to higher setting.<br> 2. Observe louver rotation speed.                           | Louver rotation speed changes according to knob position.<br> Movement remains smooth.                                                              |                   |                         |
+| **TC-12** | Verify louver knob behavior when fan speed is 0                            | Fan plugged in.<br> Speed button 0 selected.                             | 1. Press button 0.<br> 2. Turn louver knob ON.<br> 3. Observe fan blades and louver.                                             | Fan blades stay stopped.<br> Louver should not rotate if main motor power is off, or should behave according to product design without unsafe movement. |                   |                         |
+| **TC-13** | Verify buttons are easy to press and labels are understandable             | Fan placed on normal use surface.                                        | 1. Inspect button labels 0, 1, 2, 3.<br> 2. Press each button once.<br> 3. Observe tactile feedback.                             | Labels are visible and understandable.<br> Buttons are not too hard to press.<br> User can identify Stop/Low/Medium/High easily.                    |                   |                         |
+| **TC-14** | Verify fan remains physically stable at High speed with louver rotation ON | Fan plugged in.<br> Placed on flat surface.                              | 1. Press button 3.<br> 2. Turn louver knob ON/high rotation.<br> 3. Observe fan body for 1 minute.                               | Fan does not shake excessively, fall, or move from position.<br> No unsafe vibration.                                                               |                   |                         |
+| **TC-15** | Verify front case/grill prevents finger contact with moving blades         | Fan plugged in.<br> Fan running at Low speed.<br> Use safe non-body object only. | 1. Visually inspect front grill spacing.<br> 2. Use a thin safe test object near grill without forcing it.<br> 3. Do not insert fingers. | Grill prevents accidental contact with moving blades during normal use.<br> No sharp edges on front case.                                           |                   |                         |
+
+
+# 10. 20 defects
+
+## Prompt
+
+16:18 03/06/2026
+
+## Output
+
+## Part 1: AI & Large Language Model (LLM) Defects
+
+### 1. CVE-2023-29374 (LangChain Prompt Injection)
+* **Source Link:** [CVE-2023-29374](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-29374)
+* **Description:** LangChain through version 0.0.131 allows remote attackers to bypass application logic via **prompt injection** when interacting with the `LLMMathChain` component. Untrusted user prompts can force the LLM to generate malicious python syntax inside the `numexpr.evaluate()` function.
+* **Severity:** Critical (CVSS 9.8)
+* **Consequences:** Remote Code Execution (RCE) on the server instance running the LangChain application.
+* **Solution:** Upgrade LangChain to version 0.0.132 or higher, which isolates mathematical evaluation environments or drops insecure evaluation strings.
+
+### 2. CVE-2024-37032 (Ollama Path Traversal)
+* **Source Link:** [CVE-2024-37032](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-37032)
+* **Description:** A path traversal flaw in Ollama (prior to version 0.1.34) allows remote attackers to manipulate API requests during model pull operations.
+* **Severity:** Critical (CVSS 9.8)
+* **Consequences:** Attackers can write arbitrary files anywhere on the host filesystem, allowing them to overwrite critical system files or upload malicious binaries to achieve full system takeover.
+* **Solution:** Update Ollama to version 0.1.34 or later.
+
+### 3. CVE-2023-39325 (Anyscale Ray Cluster Hijacking)
+* **Source Link:** [CVE-2023-39325](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-39325)
+* **Description:** Dubbed "ShadowRay," this flaw stems from missing authentication constraints in Ray (versions 2.4.0 through 2.8.0), a popular open-source AI training framework. 
+* **Severity:** Critical (CVSS 9.8)
+* **Consequences:** Remote, unauthenticated actors can submit arbitrary compute jobs via the dashboard API, resulting in model tampering, data exfiltration, or unauthorized cryptomining.
+* **Solution:** Update Ray to version 2.8.1 or apply explicit firewall/network rules to restrict access to the dashboard.
+
+### 4. CVE-2024-24590 (ClearML Unsafe Deserialization)
+* **Source Link:** [CVE-2024-24590](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24590)
+* **Description:** ClearML platform versions prior to 1.14.2 are vulnerable to unsafe deserialization. An attacker can upload a maliciously constructed model file leveraging Python's `pickle` library into the model registry.
+* **Severity:** Critical (CVSS 9.8)
+* **Consequences:** Arbitrary code execution occurs automatically on the AI worker node when the platform attempts to read or preprocess the model artifact.
+* **Solution:** Update ClearML to version 1.14.2 or higher, which implements safer model serialization validations.
+
+### 5. CVE-2024-21515 (Flowise Low-Code LLM RCE)
+* **Source Link:** [CVE-2024-21515](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-21515)
+* **Description:** Flowise (prior to version 1.6.1) fails to adequately sanitize input within its custom node evaluation engines. Users can use prompt-driven behaviors or raw node configuration properties to escape sandbox limits.
+* **Severity:** Critical (CVSS 9.8)
+* **Consequences:** Execution of unauthorized host operating system commands, completely compromising the system hosting the Flowise LLM interface.
+* **Solution:** Apply the patch by updating Flowise to version 1.6.1 or later.
+
+### 6. CVE-2024-22419 (ComfyUI Workflow Execution Flaw)
+* **Source Link:** [CVE-2024-22419](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-22419)
+* **Description:** ComfyUI, a popular node-based interface for generative AI models, suffered from a template rendering engine vulnerability when parsing workflows.
+* **Severity:** High (CVSS 8.8)
+* **Consequences:** If a user imports a crafted, malicious generative AI workflow JSON file from an untrusted source, it triggers arbitrary code execution on their machine.
+* **Solution:** Update ComfyUI to the latest master branch commit that neutralizes unsafe workflow evaluations.
+
+### 7. CVE-2024-34359 (LlamaIndex Server-Side Request Forgery)
+* **Source Link:** [CVE-2024-34359](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-34359)
+* **Description:** LlamaIndex (prior to version 0.10.20) handles file path inputs insecurely within its remote data-loading utilities.
+* **Severity:** High (CVSS 8.8)
+* **Consequences:** Server-Side Request Forgery (SSRF) and local file inclusion. Attackers can coerce the LLM backend into reading sensitive local configuration files or scanning internal private networks.
+* **Solution:** Update LlamaIndex to version 0.10.20 or newer.
+
+---
+
+## Part 2: Core Infrastructure & Enterprise Software Defects
+
+### 8. CVE-2024-3094 (XZ Utils Malicious Backdoor)
+* **Source Link:** [CVE-2024-3094](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-3094)
+* **Description:** A sophisticated supply-chain attack where malicious code was deliberately injected into upstream tarballs of XZ Utils (versions 5.6.0 and 5.6.1). The build system modified the behavior of `liblzma` to hook OpenSSH.
+* **Severity:** Critical (CVSS 10.0)
+* **Consequences:** Allowed specific threat actors possessing a corresponding private key to bypass SSH authentication entirely and execute root-level commands remotely.
+* **Solution:** Immediately downgrade XZ Utils to a safe version (e.g., 5.4.6) or install distribution-specific vendor security updates.
+
+### 9. CVE-2024-6387 (OpenSSH "regreSSHion" Race Condition)
+* **Source Link:** [CVE-2024-6387](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-6387)
+* **Description:** A regression of a 2006 flaw was re-introduced into OpenSSH Server (`sshd`). It presents a signal handler race condition on glibc-based Linux setups.
+* **Severity:** High (CVSS 8.1)
+* **Consequences:** An unauthenticated remote attacker can achieve full root execution on target servers running affected versions (8.5p1 through 9.7p1).
+* **Solution:** Upgrade OpenSSH to version 9.8p1 or set `LoginGraceTime 0` in the configuration as a workaround.
+
+### 10. CVE-2022-22965 (Spring4Shell)
+* **Source Link:** [CVE-2022-22965](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22965)
+* **Description:** A flaw in Spring Framework data binding running on JDK 9+ allows a remote attacker to manipulate class loader properties via HTTP parameters.
+* **Severity:** Critical (CVSS 9.8)
+* **Consequences:** Allows attackers to write a malicious JSP web shell directly onto the underlying Tomcat server directory, granting persistent web shell access.
+* **Solution:** Upgrade Spring Framework to versions 5.3.18 / 5.2.20 or higher.
+
+### 11. CVE-2023-38831 (WinRAR Arbitrary Execution)
+* **Source Link:** [CVE-2023-38831](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-38831)
+* **Description:** WinRAR versions prior to 6.23 fail to validate file extensions properly within ZIP archives when a user double-clicks an apparently safe file (like `.jpg` or `.pdf`).
+* **Severity:** High (CVSS 7.8)
+* **Consequences:** Triggers the silent execution of a hidden executable payload stored in a folder matching the target file name, leading to malware infection.
+* **Solution:** Upgrade WinRAR to version 6.23 or newer.
+
+### 12. CVE-2023-4863 (libwebp Heap Buffer Overflow)
+* **Source Link:** [CVE-2023-4863](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4863)
+* **Description:** A heap buffer overflow in the lossless compression parsing component of the `libwebp` library.
+* **Severity:** Critical (CVSS 8.8)
+* **Consequences:** Memory corruption or remote code execution when a victim opens a maliciously crafted WebP image file inside a browser, chat client, or office application.
+* **Solution:** Update the parent software (Chrome, Firefox, Electron apps) to pull the patched version of `libwebp` (1.3.2+).
+
+### 13. CVE-2024-21626 (runc Container Escape)
+* **Source Link:** [CVE-2024-21626](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-21626)
+* **Description:** An internal file descriptor leak within `runc` allows an attacker to specify a host-accessible directory path during container initialization commands like `runc exec`.
+* **Severity:** Critical (CVSS 8.6)
+* **Consequences:** Container escape, granting the attacker complete, unprivileged access to the underlying host filesystem and orchestrator environment.
+* **Solution:** Update `runc` to version 1.1.12 or higher.
+
+### 14. CVE-2024-3400 (Palo Alto Networks PAN-OS Injection)
+* **Source Link:** [CVE-2024-3400](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-3400)
+* **Description:** An OS command injection vulnerability in the GlobalProtect gateway feature of PAN-OS (versions 10.2, 11.0, and 11.1).
+* **Severity:** Critical (CVSS 10.0)
+* **Consequences:** An unauthenticated remote attacker can execute shell commands with root privileges directly on the firewall appliance.
+* **Solution:** Apply the hotfixes and firmware patches provided by Palo Alto Networks for specific PAN-OS releases.
+
+### 15. CVE-2022-42889 (Text4Shell)
+* **Source Link:** [CVE-2022-42889](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-42889)
+* **Description:** Apache Commons Text (versions 1.5 through 1.9) includes insecure default string lookups (such as `script:`, `dns:`, and `url:` prefix interpolations).
+* **Severity:** Critical (CVSS 9.8)
+* **Consequences:** Remote code execution or data exfiltration when application engines feed unsanitized parameters into lookup wrappers.
+* **Solution:** Upgrade Apache Commons Text to version 1.10.0 or higher.
+
+### 16. CVE-2023-22515 (Atlassian Confluence Privilege Escalation)
+* **Source Link:** [CVE-2023-22515](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-22515)
+* **Description:** A broken object-level authorization flaw within Atlassian Confluence Data Center and Confluence Server deployments.
+* **Severity:** Critical (CVSS 10.0)
+* **Consequences:** Allowed an unauthenticated remote attacker to invoke internal setup commands, creating administrative accounts and completely taking over the Confluence site.
+* **Solution:** Upgrade to fixed Confluence versions (e.g., 8.3.3, 8.4.3, 8.5.2, or newer).
+
+### 17. CVE-2024-2961 (glibc iconv Buffer Overflow)
+* **Source Link:** [CVE-2024-2961](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2961)
+* **Description:** A buffer overflow exists in the GNU C Library (glibc) during charset conversions to the ISO-2022-CN-EXT format inside the `iconv()` function.
+* **Severity:** High (CVSS 8.1)
+* **Consequences:** Memory corruption or application execution crashes. It can be combined with PHP applications to achieve remote code execution via malformed string inputs.
+* **Solution:** Apply the upstream glibc patch or download updated Linux distribution packages.
+
+### 18. CVE-2023-50164 (Apache Struts 2 File Upload Exploit)
+* **Source Link:** [CVE-2023-50164](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-50164)
+* **Description:** An input handling vulnerability in Apache Struts 2 allows parameter pollution during multi-part file uploads, facilitating path traversal.
+* **Severity:** Critical (CVSS 9.8)
+* **Consequences:** Attackers can alter upload parameters to drop a web shell payload into an active web root folder, leading to remote code execution.
+* **Solution:** Update Apache Struts to versions 2.5.33, 6.3.0.2, or subsequent releases.
+
+### 19. CVE-2022-26134 (Atlassian Confluence OGNL Injection)
+* **Source Link:** [CVE-2022-26134](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-26134)
+* **Description:** An Object-Graph Navigation Language (OGNL) injection defect in Confluence Server and Data Center allows structural code parsing from HTTP request headers.
+* **Severity:** Critical (CVSS 9.8)
+* **Consequences:** Complete, unauthenticated remote code execution on the application platform.
+* **Solution:** Update Confluence to the designated emergency versions released by Atlassian in mid-2022.
+
+### 20. CVE-2024-47575 (Fortinet FortiManager "FortiJump")
+* **Source Link:** [CVE-2024-47575](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-47575)
+* **Description:** A missing authentication flaw within Fortinet FortiManager's FGFM daemon handles multi-tenant connections insecurely.
+* **Severity:** Critical (CVSS 9.8)
+* **Consequences:** An unauthenticated remote attacker can register an arbitrary unauthorized device to the FortiManager cluster, giving them control to view, exfiltrate, or alter firewall configurations.
+* **Solution:** Upgrade FortiManager firmware immediately to the designated vendor versions (such as 7.6.1, 7.4.5, or 7.2.8).

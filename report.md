@@ -799,14 +799,174 @@
 
 ### 2.1 Summary
 - Total defects: `20/20`
-- AI/LLM-related defects: `<count>` (must be `>= 5`)
+- AI/LLM-related defects: `7` (must be `>= 5`)
 - AI bias/hallucination analysis entries: `20/20` (one per defect)
 
-### 2.2 Defects Table
+### 2.2 20 Software Defects
 
-> Paste from `hw01-software-defects-table-template.md`
+### Part 1: AI & Large Language Model (LLM) Defects
 
----
+**1. CVE-2023-29374 (LangChain Prompt Injection)**
+* **Source Link:** [CVE-2023-29374](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-29374)
+* **Description:** LangChain through version 0.0.131 allows prompt injection attacks against the `LLMMathChain` chain. A crafted prompt can execute arbitrary code through the Python `exec` method.
+* **Severity:** Critical (CVSS 9.8)
+* **Consequences:** Remote code execution on the server running the vulnerable LangChain application when untrusted prompts reach the affected chain.
+* **Solution:** Upgrade LangChain to version 0.0.132 or later and avoid sending untrusted prompts to components that can execute generated code.
+* **AI Hallucination/Bias:** The source names Python `exec`, not `numexpr.evaluate()`, as the execution path.
+
+**2. CVE-2024-37032 (Ollama Path Traversal)**
+* **Source Link:** [CVE-2024-37032](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-37032)
+* **Description:** Ollama before version 0.1.34 does not validate digest format when building model blob paths. Invalid digest values, including an initial `../` substring, can be mishandled.
+* **Severity:** High (CVSS 8.8)
+* **Consequences:** Path traversal through crafted digest values during model path handling. Impact should be described as filesystem path mishandling, not guaranteed full system takeover.
+* **Solution:** Update Ollama to version 0.1.34 or later.
+* **AI Hallucination/Bias:** Critical 9.8 and “full system takeover” overstated the source-backed severity and impact.
+
+**3. CVE-2023-39325 (Go HTTP/2 Rapid Reset DoS)**
+* **Source Link:** [CVE-2023-39325](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-39325)
+* **Description:** A malicious HTTP/2 client can rapidly create requests and immediately reset them, causing excessive server resource consumption in Go HTTP/2 servers.
+* **Severity:** High (CVSS 7.5)
+* **Consequences:** Denial of service through excessive handler goroutine/resource consumption, even though the total number of concurrent streams is bounded.
+* **Solution:** Apply patched Go and `golang.org/x/net/http2` versions that bound simultaneously executing handler goroutines to the stream concurrency limit.
+* **AI Hallucination/Bias:** The source is Go HTTP/2 rapid reset DoS, not Anyscale Ray / ShadowRay.
+
+**4. CVE-2024-24590 (ClearML Unsafe Deserialization)**
+* **Source Link:** [CVE-2024-24590](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-24590)
+* **Description:** Allegro AI ClearML client SDK versions 0.17.0 through 1.14.2 can deserialize untrusted data. A maliciously uploaded artifact can run arbitrary code on an end user's system when interacted with.
+* **Severity:** High (CVSS 8.0)
+* **Consequences:** Arbitrary code execution on the user's system when the malicious artifact is opened or otherwise interacted with, not automatic execution on every worker preprocessing event.
+* **Solution:** Upgrade ClearML client SDK to version 1.14.3 or later.
+* **AI Hallucination/Bias:** The source severity is High and affected versions include 1.14.2, so 1.14.2 is not the fixed version.
+
+**5. CVE-2024-21515 (OpenCart Reflected XSS)**
+* **Source Link:** [CVE-2024-21515](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-21515)
+* **Description:** OpenCart versions from 4.0.0.0 have a reflected XSS issue in the `filename` parameter of the admin `tool/log` route.
+* **Severity:** Medium (CVSS 4.2)
+* **Consequences:** An attacker can trick a user into opening a crafted URL and steal the user's token. If the victim is an administrator, this can become a starting point for chained admin-functionality exploits.
+* **Solution:** Apply OpenCart fixes for the admin redirect/XSS issue, avoid using malicious links while authenticated, and restrict or rename the admin directory as recommended by the source notes.
+* **AI Hallucination/Bias:** The source describes OpenCart reflected XSS, not Flowise LLM RCE.
+
+**6. CVE-2024-22419 (Vyper concat Buffer Overwrite)**
+* **Source Link:** [CVE-2024-22419](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-22419)
+* **Description:** Vyper's `concat` built-in can write past the bounds of its allocated memory buffer because `build_IR` for `concat` does not properly follow the copy-function API.
+* **Severity:** High (CVSS 7.3)
+* **Consequences:** Valid contract data can be overwritten, changing smart-contract semantics in length-dependent cases that may not appear during normal testing.
+* **Solution:** Upgrade Vyper to version 0.4.0 or later.
+* **AI Hallucination/Bias:** The source is a Vyper smart-contract compiler issue, not a ComfyUI workflow-execution flaw.
+
+**7. CVE-2024-34359 (llama-cpp-python Jinja2 SSTI)**
+* **Source Link:** [CVE-2024-34359](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-34359)
+* **Description:** `llama-cpp-python` versions 0.2.30 through 0.2.71 load chat-template metadata from `.gguf` models and parse it with a sandbox-less Jinja2 environment.
+* **Severity:** Critical (CVSS 9.7)
+* **Consequences:** A crafted model chat template can trigger Jinja2 server-side template injection and lead to remote code execution when the template is rendered.
+* **Solution:** Upgrade `llama-cpp-python` to a patched version outside the affected 0.2.30 through 0.2.71 range and avoid loading untrusted model files.
+* **AI Hallucination/Bias:** The source describes llama-cpp-python Jinja2 SSTI/RCE, not LlamaIndex SSRF.
+
+### Part 2: Core Infrastructure & Enterprise Software Defects
+
+**8. CVE-2024-3094 (XZ Utils Malicious Backdoor)**
+* **Source Link:** [CVE-2024-3094](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-3094)
+* **Description:** Malicious code was deliberately injected into upstream XZ Utils tarballs starting with version 5.6.0. The obfuscated build process modified `liblzma` functions used by linked software.
+* **Severity:** Critical (CVSS 10.0)
+* **Consequences:** On affected builds, software linked against the modified `liblzma` could have its data interactions intercepted and modified. Practical OpenSSH exploitation depended on specific build conditions and attacker-controlled trigger material.
+* **Solution:** Immediately downgrade XZ Utils to a safe version such as 5.4.6 or install distribution-specific vendor security updates.
+* **AI Hallucination/Bias:** The original consequence was too broad because exploitation depended on affected builds and a matching trigger/private key.
+
+**9. CVE-2024-6387 (OpenSSH "regreSSHion" Race Condition)**
+* **Source Link:** [CVE-2024-6387](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-6387)
+* **Description:** A regression of CVE-2006-5051 in OpenSSH server (`sshd`) introduces a race condition where some signals can be handled unsafely.
+* **Severity:** High (CVSS 8.1)
+* **Consequences:** An unauthenticated remote attacker may be able to trigger the race by failing to authenticate within the grace period, with possible code execution on vulnerable glibc-based Linux targets.
+* **Solution:** Upgrade OpenSSH to version 9.8p1 or set `LoginGraceTime 0` as a temporary workaround.
+* **AI Hallucination/Bias:** Root execution should be phrased as possible and timing-dependent, not guaranteed.
+
+**10. CVE-2022-22965 (Spring4Shell)**
+* **Source Link:** [CVE-2022-22965](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22965)
+* **Description:** A Spring MVC or Spring WebFlux application running on JDK 9+ may be vulnerable to remote code execution through data binding.
+* **Severity:** Critical (CVSS 9.8)
+* **Consequences:** The widely known exploit requires Tomcat as a WAR deployment. Spring Boot executable JAR deployments are not vulnerable to that exploit path, though the underlying vulnerability is more general.
+* **Solution:** Upgrade Spring Framework to versions 5.3.18 / 5.2.20 or higher.
+* **AI Hallucination/Bias:** The source requires specific JDK 9+ and Tomcat WAR deployment conditions for the common exploit.
+
+**11. CVE-2023-38831 (WinRAR Arbitrary Execution)**
+* **Source Link:** [CVE-2023-38831](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-38831)
+* **Description:** WinRAR before version 6.23 can execute arbitrary code when a user attempts to view a benign file inside a crafted ZIP archive that also contains a same-named folder with executable content.
+* **Severity:** High (CVSS 7.8)
+* **Consequences:** Arbitrary code execution occurs after user interaction with the crafted archive; it is not a purely silent, no-click server-side compromise.
+* **Solution:** Upgrade WinRAR to version 6.23 or newer.
+* **AI Hallucination/Bias:** The exploit still depends on user interaction with a crafted archive.
+
+**12. CVE-2023-4863 (libwebp Heap Buffer Overflow)**
+* **Source Link:** [CVE-2023-4863](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4863)
+* **Description:** A heap buffer overflow in `libwebp` in Google Chrome before 116.0.5845.187 and `libwebp` before 1.3.2 allows out-of-bounds memory write through crafted WebP content.
+* **Severity:** High (CVSS 8.8; Chromium severity Critical)
+* **Consequences:** Memory corruption and possible remote code execution when crafted WebP content is processed by a vulnerable browser or application.
+* **Solution:** Update Chrome, Firefox, Electron apps, or other parent software to versions that include the patched `libwebp` 1.3.2 or later.
+* **AI Hallucination/Bias:** CVSS 8.8 maps to High even though Chromium separately rated the issue Critical.
+
+**13. CVE-2024-21626 (runc Container Escape)**
+* **Source Link:** [CVE-2024-21626](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-21626)
+* **Description:** `runc` 1.1.11 and earlier leak an internal file descriptor, allowing a newly spawned container process to have a working directory in the host filesystem namespace.
+* **Severity:** High (CVSS 8.6)
+* **Consequences:** A malicious image or `runc exec` workflow can gain host filesystem access. Some variants can overwrite semi-arbitrary host binaries and produce complete container escape.
+* **Solution:** Update `runc` to version 1.1.12 or higher.
+* **AI Hallucination/Bias:** CVSS 8.6 is High, and complete escape applies to specific variants rather than every exploit path.
+
+**14. CVE-2024-3400 (Palo Alto Networks PAN-OS Injection)**
+* **Source Link:** [CVE-2024-3400](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-3400)
+* **Description:** A command injection issue from arbitrary file creation affects the GlobalProtect feature in specific PAN-OS versions and feature configurations.
+* **Severity:** Critical (CVSS 10.0)
+* **Consequences:** An unauthenticated attacker can execute arbitrary code with root privileges on vulnerable firewall deployments. Cloud NGFW, Panorama appliances, and Prisma Access are not impacted by this CVE.
+* **Solution:** Apply Palo Alto Networks hotfixes for affected PAN-OS 10.2, 11.0, and 11.1 releases and ensure vulnerable GlobalProtect gateway configurations are not exposed.
+* **AI Hallucination/Bias:** The source limits risk to specific PAN-OS versions and GlobalProtect feature configurations.
+
+**15. CVE-2022-42889 (Text4Shell)**
+* **Source Link:** [CVE-2022-42889](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-42889)
+* **Description:** Apache Commons Text versions 1.5 through 1.9 include default string lookups such as `script`, `dns`, and `url` in variable interpolation.
+* **Severity:** Critical (CVSS 9.8)
+* **Consequences:** Applications may execute code or contact remote servers if untrusted configuration values reach the vulnerable interpolation defaults.
+* **Solution:** Upgrade Apache Commons Text to version 1.10.0 or higher, which disables the problematic interpolators by default.
+* **AI Hallucination/Bias:** The impact depends on attacker-controlled input reaching vulnerable interpolation.
+
+**16. CVE-2023-22515 (Atlassian Confluence Privilege Escalation)**
+* **Source Link:** [CVE-2023-22515](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-22515)
+* **Description:** Publicly accessible Atlassian Confluence Data Center and Server instances could be exploited by external attackers to create unauthorized Confluence administrator accounts.
+* **Severity:** Critical (CVSS 10.0)
+* **Consequences:** Attackers can create administrator accounts and access or take over affected Confluence instances. Atlassian Cloud sites are not affected.
+* **Solution:** Upgrade to fixed Confluence versions such as 8.3.3, 8.4.3, 8.5.2, or newer fixed releases.
+* **AI Hallucination/Bias:** “Broken object-level authorization” was imprecise; the source describes unauthenticated administrator-account creation.
+
+**17. CVE-2024-2961 (glibc iconv Buffer Overflow)**
+* **Source Link:** [CVE-2024-2961](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-2961)
+* **Description:** The `iconv()` function in GNU C Library 2.39 and older can overflow the output buffer by up to 4 bytes when converting to the ISO-2022-CN-EXT character set.
+* **Severity:** High (CVSS 8.1)
+* **Consequences:** The official impact is application crash or neighboring-variable overwrite. Remote code execution requires an additional exploit chain and should not be presented as direct default impact.
+* **Solution:** Apply the upstream glibc patch or install updated Linux distribution packages.
+* **AI Hallucination/Bias:** RCE needs careful conditional wording because the source names crash / neighboring-variable overwrite.
+
+**18. CVE-2023-50164 (Apache Struts 2 File Upload Exploit)**
+* **Source Link:** [CVE-2023-50164](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-50164)
+* **Description:** Apache Struts allows attackers to manipulate file-upload parameters to enable path traversal during multipart uploads.
+* **Severity:** Critical (CVSS 9.8)
+* **Consequences:** Under some circumstances, an attacker can upload a malicious file that can be used for remote code execution. The exploitability depends on deployment and upload handling.
+* **Solution:** Update Apache Struts to versions 2.5.33, 6.3.0.2, or later.
+* **AI Hallucination/Bias:** RCE is source-backed but conditional, not guaranteed for every upload path.
+
+**19. CVE-2022-26134 (Atlassian Confluence OGNL Injection)**
+* **Source Link:** [CVE-2022-26134](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-26134)
+* **Description:** Affected Confluence Server and Data Center versions contain an OGNL injection vulnerability that allows unauthenticated attackers to execute arbitrary code.
+* **Severity:** Critical (CVSS 9.8)
+* **Consequences:** Complete unauthenticated remote code execution on vulnerable Confluence Server or Data Center instances.
+* **Solution:** Upgrade Confluence to fixed versions such as 7.4.17, 7.13.7, 7.14.3, 7.15.2, 7.16.4, 7.17.4, 7.18.1, or later supported fixed releases.
+* **AI Hallucination/Bias:** “Structural code parsing from HTTP request headers” was unclear; the source says unauthenticated OGNL injection.
+
+**20. CVE-2024-47575 (Fortinet FortiManager "FortiJump")**
+* **Source Link:** [CVE-2024-47575](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-47575)
+* **Description:** Fortinet FortiManager and FortiManager Cloud contain a missing-authentication vulnerability for a critical function across multiple 7.x and 6.x branches.
+* **Severity:** Critical (CVSS 9.8)
+* **Consequences:** An unauthenticated attacker can execute arbitrary code or commands through specially crafted requests.
+* **Solution:** Upgrade to fixed FortiManager/FortiManager Cloud branches, including 7.6.1, 7.4.5, 7.2.8, 7.0.13, 6.4.15, 6.2.13, or vendor-designated Cloud fixed versions as applicable.
+* **AI Hallucination/Bias:** The source impact is arbitrary code/command execution, and the fix list includes older affected branches.
 
 ## 3) Requirement 3 — Test Cases for ONE Physical Product (40 pts)
 
@@ -827,7 +987,7 @@
 
 | **TC ID** |                                **Objective**                               |                         **Input / Preconditions**                        |                                                             **Steps**                                                            |                                                                 **Expected Result**                                                                 | **Actual Result** | **Verdict (Pass/Fail)** |
 |:---------:|:--------------------------------------------------------------------------:|:------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------:|:-----------------------:|
-| **TC-01** | Verify Stop button turns fan off                                           | Fan plugged in.<br> Button 1, 2, or 3 is active.                         | 1. Turn fan on at any speed.<br> 2. Press button 0.<br> 3. Observe blades and airflow.                                           | Fan motor stops.<br> No airflow.                                                                                                                    |                   |                         |
+| **TC-01** | Verify Stop button turns fan off                                           | Fan plugged in.<br> Button 1, 2, or 3 is active.                         | 1. Turn fan on at any speed.<br> 2. Press button 0.<br> 3. Observe blades and airflow.                                           | Fan motor stops.<br> No airflow.<br> Button 0 releases.                                                                                                                    |                   |                         |
 | **TC-02** | Verify Low speed button works                                              | Fan plugged in.<br> Fan is stopped.                                      | 1. Press button 1.<br> 2. Observe blade movement and airflow.                                                                    | Fan starts at low speed.<br> Airflow is weak but stable.<br> No abnormal noise.                                                                     |                   |                         |
 | **TC-03** | Verify Medium speed button works                                           | Fan plugged in.<br> Fan is stopped.                                      | 1. Press button 2.<br> 2. Observe blade movement and airflow.                                                                    | Fan starts at medium speed.<br> Airflow is stronger than Low.<br> No abnormal noise.                                                                |                   |                         |
 | **TC-04** | Verify High speed button works                                             | Fan plugged in.<br> Fan is stopped.                                      | 1. Press button 3.<br> 2. Observe blade movement and airflow.                                                                    | Fan starts at high speed.<br> Airflow is strongest.<br> Fan remains stable.                                                                         |                   |                         |
