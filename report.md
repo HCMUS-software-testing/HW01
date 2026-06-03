@@ -13,7 +13,7 @@
 ### 1.1 Summary
 - Total postings collected: `10/10`
 - Published within 60 days before submission: `Yes`
-- Postings requiring AI/LLM/automation-AI skills: `8`
+- Postings requiring AI/LLM/automation-AI skills: `9`
 
 ### 1.2 Job Postings
 
@@ -83,11 +83,16 @@
 
 **Required Skills**
 
-Requirements traceability, manual testing, automation-testing exposure, Jira/Azure DevOps, accessibility testing (WCAG), defect triage, stakeholder communication.
+- Business analysis and stakeholder interviews.
+- Requirements traceability across Strategic Brief, IA, and UX deliverables.
+- Content audit/workbook validation, mockup acceptance criteria, and defect-log operation.
+- Test planning/test cases for content migration, redirects, and site testing.
+- WCAG 2.1 AA/Section 508 accessibility testing with Jira/Azure DevOps, Drupal, axe, WAVE, NVDA, and JAWS.
 
 **AI Impact Analysis (1–2 sentences)**
 
-This role shows QA expanding into cross-functional quality governance, not only testcase execution. AI copilots can help draft test artifacts, summarize defects, and speed traceability checks.
+- This role is a QA lead role for content migration, accessibility, redirects, and pre-launch verification, so AI can help draft traceability matrices, test cases, and defect summaries.
+- Human review still matters because WCAG findings, content-retention decisions, and launch-risk triage require context-sensitive judgment.
 
 **Evidence**
 
@@ -108,7 +113,7 @@ This role shows QA expanding into cross-functional quality governance, not only 
 
 **Job Description**
 
-> **Full Job Description**
+> **About the job**
 >
 > About The Role
 >
@@ -151,11 +156,16 @@ This role shows QA expanding into cross-functional quality governance, not only 
 
 **Required Skills**
 
-AI/LLM evaluation, quality analysis, conversational testing, safety/accuracy review, structured feedback.
+- AI chatbot conversation testing across broad topics.
+- Response rating for helpfulness, accuracy, tone, and safety.
+- Factual-error, awkward-phrasing, bias, and inappropriate-output detection.
+- Adversarial/nuanced prompt design to challenge chatbot limits.
+- Structured feedback writing, critical written evaluation, asynchronous remote work, and chatbot-platform familiarity.
 
 **AI Impact Analysis (1–2 sentences)**
 
-This is a direct AI-era QA role where testing target is model behavior instead of only classical software flows. Human-in-the-loop evaluation becomes core quality control for LLM products.
+- This is a direct AI-era QA role where the product under test is LLM behavior, not only deterministic software flows.
+- Human-in-the-loop testers improve model safety and usefulness by challenging chatbots, detecting subtle failures, and converting judgment into structured training feedback.
 
 **Evidence**
 
@@ -165,56 +175,88 @@ This is a direct AI-era QA role where testing target is model behavior instead o
 
 #### 1.2.3 Posting 03
 
-- Job title: Marketing QA Analyst
-- Company: Mutual of Omaha
-- Location: Remote
-- Platform: SimplyHired
-- Posting date: 10d
-- Job URL: https://www.simplyhired.com/job/KddCc8sMwwLN4MqGnPHgyzWn7j4GU5OxO8IkaG0AF-HnpCDJBIIBLA
-- Salary: $68,000 - $97,000 a year
-- Requires AI/LLM/automation-AI skills? N
-- Retrieval note: The original SimplyHired page was temporarily unavailable when revisited, so the full description below was copied from the official Mutual of Omaha careers page for the same role: https://www.mutualofomaha.com/careers/jobs/detail/504863
+- Job title: Fresher Full-stack Test Engineer (QA/QC/Tester)
+- Company: KMS Technology, Inc.
+- Location: Ho Chi Minh City, Ho Chi Minh City, Vietnam (On-site)
+- Platform: LinkedIn
+- Posting date: 29/05/2026
+- Job URL: https://www.linkedin.com/jobs/view/4417931013/
+- Salary: Not listed
+- Requires AI/LLM/automation-AI skills? Y
 
 **Job Description**
 
-> **Full Job Description**
+> **About the job**
 >
-> As our Marketing QA Analyst (or Sr. Analyst, depending on experience), you’ll partner closely with marketing, product, compliance, and operations teams to review, monitor, and maintain marketing materials across multiple channels. You’ll leverage compliance monitoring and workflow tools to support both automated and manual review processes while helping improve overall efficiency and governance.
+> Building Products & Systems that Shape the Future
 >
-> WHAT WE CAN OFFER YOU:
-> - Estimated Salary (levels have variable responsibilities and qualifications):
-> - Marketing QA Analyst (1-3 years experience): $68,000 - $87,500, plus annual bonus opportunity.
-> - Sr. Marketing QA Analyst (4+ years experience): $75,500 - $97,000, plus annual bonus opportunity.
-> - 401(k) plan with a 2% company contribution and 6% company match.
-> - Work-life balance with vacation, personal time and paid holidays.
-> - Applicants for this position must not now, nor at any point in the future, require sponsorship for employment.
+> KMS Technology is a strategic engineering company helping businesses turn bold ideas into high-impact solutions—faster. Founded in 2009 as a U.S.-based services company, we’ve grown into a global organization with locations in the US, Vietnam, Mexico and Poland. KMS is trusted globally for the quality of our engineering and consulting services. We bring deep expertise in product development and quality assurance, Data & AI-native engineering, and delivery excellence to every engagement. Our mission is to help customers build what’s next—accelerating innovation, crafting brilliant solutions, and creating real-world impact. At KMS, we believe sustainable growth is built on the success of our clients and employees and in making a lasting contribution to our communities.
 >
-> WHAT YOU'LL DO:
-> - Review and monitor marketing materials for compliance with insurance regulations, brand standards, and product accuracy using both automated tools and manual review processes.
-> - Communicate revisions and escalate flagged content for compliance review when needed.
-> - Ensure the overall quality and accuracy of marketing assets, including spelling, grammar, formatting, print specifications, and metadata before materials are released to market.
-> - Partner with marketing and project teams to ensure approved materials are market-ready, distributed on time, and maintained throughout their lifecycle, including tracking expirations and removing outdated assets.
-> - Support audit readiness and governance efforts by maintaining clear documentation of reviews, approvals, and compliance activity while helping manage a centralized library of approved materials.
-> - Identify opportunities to improve workflows, streamline review processes, and enhance efficiency through automation and process optimization.
+>Job Description
 >
-> WHAT YOU’LL BRING:
-> - A minimum of 1 year of experience in marketing, compliance, or marketing operations within the insurance or financial services industry.
-> - Experience using compliance monitoring platforms such as PerformLine, Smarsh, Proofpoint, or Hearsay, along with a strong understanding of insurance marketing regulations and advertising review processes.
-> - Strong attention to detail with the ability to review content for accuracy, consistency, and compliance while managing multiple priorities and deadlines in a fast-paced environment.
-> - Experience working with digital asset management (DAM) systems and workflow management tools such as Adobe Workfront, JIRA, or Asana.
-> - Excellent communication and collaboration skills with the ability to partner effectively across marketing, compliance, product, and operations teams.
-> - Insurance or financial services marketing experience preferred, including familiarity with NAIC guidelines and state DOI requirements.
-> - You promote a collaborative culture, value different ideas and opinions, and listen courageously, remaining curious in all that you do.
-> - Able to work remotely with access to a high-speed internet connection and located in the United States or Puerto Rico.
-> - We value unique experience, skills, and passion for innovation. If your experience aligns with the listed requirements, please apply.
+> Your key responsibilities
+> - Develop a strong understanding of domain knowledge and client testing processes to execute testing activities effectively.
+> - Work closely with the project team on daily tasks and participate in sprint demo meetings with clients.
+> - Develop, maintain, and execute test cases/test scripts.
+> - Identify, report, track, and monitor defects using the defect tracking system.
+> - Prepare and review test documentation to ensure accuracy and completeness.
+> - Address issues related to testing quality and suggest improvements.
+> - Communicate test progress, results, and quality risks both internally and directly with the client.
+>
+> Qualifications
+> - 4th-year student or recent graduate with a Bachelor's degree in Information Technology, Computer Science, Software Engineering, or a related field, with less than one year of experience.
+> - Strong IT background with a GPA of 7.5+ and academic transcript attached when submitting CV.
+> - Upper-intermediate or higher English proficiency, both written and verbal.
+> - Minimum 3-month internship experience in software testing, automation testing, or a related field is a plus.
+> - Strong self-learning ability with a proactive, growth-oriented mindset.
+> - Excellent analytical and problem-solving skills.
+> - Ability to work independently and collaborate effectively in a team.
+>
+> Technical requirements
+> - Solid understanding of software testing concepts and methodologies, including manual, automation, integration, unit, and API testing. 
+> - Solid programming skills in Python / Java / JavaScript, or other relevant languages. 
+> - Familiarity with testing tools (e.g., Selenium, Katalon, Playwright, Appium, JUnit), as well as tools for API testing (e.g., Postman), is a plus
+>
+> Nice to have
+> - Experience using AI chat tools (ChatGPT, Claude, Gemini, etc.) for research, debugging, and learning
+> - Familiarity with at least one AI coding assistant (GitHub Copilot, Cursor, Claude Code, or similar)
+> - Ability to write clear, contextual prompts to generate code snippets, unit tests, or documentation
+> - Awareness of AI output limitations and responsible AI use (data privacy, handling of sensitive client data)
+>
+> Additional Information
+>
+> BE YOUR BEST WITH KMS
+>
+> - Working in one of the Best Places to Work in Vietnam
+> - Building large-scale & global software products
+> - Working & growing with Passionate & Talented Team
+> - Diverse careers opportunities with Software Outsourcing, Software Product Development, IT Solutions & Consulting
+> - Attractive Salary and Benefits
+> - Performance appraisal twice a year and performance bonus
+> - Onsite opportunities: short-term and long-term assignments in North American (U.S, Canada), Europe, Asia. 
+> - Flexible working time
+> - Various training on hot-trend technologies, best practices, and soft skills
+> - Premium healthcare insurance for you and your loved ones
+> - Company trip, big annual year-end party every year, team building,... 
+> - Fitness & sports activities: football, tennis, table tennis, badminton, yoga,... 
+> - Joining community development activities: 1% Pledge, charity every quarter, blood donation, public seminars, career > - orientation talks,.. 
+> - Free in-house entertainment facilities (foosball, ping pong, gym,...), coffee (latte, cappuccino, espresso,...) and snack (instant noodles, cookies, candies,..)
+>
+> And much more...Send your Resume including Academic Transcript to join us and let yourself explore other fantastic things!
 
 **Required Skills**
 
-Quality analysis, communication skills, campaign QA coordination, defect reporting, cross-team collaboration.
+- Manual, automation, integration, unit, and API testing.
+- Test case/test script development, defect reporting/tracking, and test documentation review.
+- Python, Java, or JavaScript programming.
+- Selenium, Katalon, Playwright, Appium, JUnit, and Postman familiarity.
+- Sprint-demo participation and client communication.
+- AI chat tools, AI coding assistants, contextual prompt writing, and responsible AI/data-privacy awareness.
 
 **AI Impact Analysis (1–2 sentences)**
 
-Marketing QA roles show QA scope expanding beyond traditional app testing into content and campaign quality pipelines. AI can support faster anomaly detection and review prioritization.
+- This fresher role explicitly treats AI tools as productivity skills for research, debugging, learning, code snippets, unit tests, and documentation.
+- It also shows employers expect junior QA engineers to understand AI limits and protect client data when using tools such as ChatGPT, Claude, Gemini, Copilot, Cursor, or Claude Code.
 
 **Evidence**
 
@@ -228,14 +270,14 @@ Marketing QA roles show QA scope expanding beyond traditional app testing into c
 - Company: Apply4U | Human-Assisted AI Job & Recruitment Platform
 - Location: United Kingdom (Remote)
 - Platform: LinkedIn
-- Posting date: 11 hours ago
+- Posting date: 02/06/2026
 - Job URL: https://www.linkedin.com/jobs/view/4421658202/
 - Salary: £13/hr - £16/hr
 - Requires AI/LLM/automation-AI skills? Y (AI-assisted platform context)
 
 **Job Description**
 
-> **Full Job Description**
+> **About the job**
 >
 > Remote QA Tester (Manual – Entry-Level)
 >
@@ -266,15 +308,22 @@ Marketing QA roles show QA scope expanding beyond traditional app testing into c
 > - Gain valuable industry experience with real projects.
 > - Supportive remote team environment.
 >
-> Apply Now: Launch your QA career with Apply4U — apply today.
+> Apply Now:
+> - Launch your QA career with Apply4U — apply today.
 
 **Required Skills**
 
-QA execution, defect reporting, remote collaboration, structured testing practice.
+- Entry-level manual QA for web and mobile applications.
+- Bug and usability issue identification.
+- Test case/result documentation and clear issue reporting.
+- Defect reproduction collaboration with developers.
+- Quality-standard checks before release.
+- Remote collaboration, attention to detail, problem solving, and written/verbal communication.
 
 **AI Impact Analysis (1–2 sentences)**
 
-Even general QA-tester roles are now embedded in AI-assisted product ecosystems. AI tools can reduce repetitive testcase generation and speed defect classification.
+- The posting does not require direct AI/LLM skills in the task list, but it belongs to a human-assisted AI recruitment platform where QA protects user-facing web and mobile workflows.
+- AI can support repetitive test-case drafting and bug-report cleanup, while the entry-level tester still supplies human usability judgment and clear reproduction evidence.
 
 **Evidence**
 
@@ -288,7 +337,7 @@ Even general QA-tester roles are now embedded in AI-assisted product ecosystems.
 - Company: Zwift
 - Location: Long Beach, CA (Remote-eligible US locations)
 - Platform: SimplyHired
-- Posting date: 9 days ago
+- Posting date: 23/05/2026
 - Job URL: https://www.simplyhired.com/job/Hna9XHBa_Kh_Knfugud6Qt2EPSUDnPF-XcQkBUodtpTum8fs5mCqxg
 - Salary: $70,500 - $110,000 a year
 - Requires AI/LLM/automation-AI skills? Y (automation/API/CI context)
@@ -335,18 +384,32 @@ Even general QA-tester roles are now embedded in AI-assisted product ecosystems.
 > - Experienced Zwifter.
 >
 > For All US Based Full-Time Positions:
-> - The base salary for this position ranges between $70,500 to $110,000 depending on role, experience, qualifications, and geographic location.
-> - In addition to base salary, Zwift offers performance bonuses, equity, and a comprehensive benefits package.
+> 
+> The base salary for this position ranges between $70,500 to $110,000. The base salary will be based on a number of factors including the role offered, the individual's job-related knowledge, skills, qualifications, and geographic location. In addition to base salary, Zwift is proud to offer a comprehensive and competitive benefits package for all eligible employees which also includes performance bonuses, equity, and a full range of medical, financial, and other perks and benefits.
 >
 > If Zwift determines in any stage of our interviews that any AI tools are being used without disclosure or citation, your candidacy will be disqualified.
+>
+> How to stand out among the rest:
+>
+> Your resume/CV is enough to show off your skills, accomplishments, and experience. However, if you choose to include a cover letter introducing us to your awesome personality, we will read that too.
+>
+> We strongly believe that different backgrounds and ideas are a competitive advantage; we hire candidates of any race, color, ancestry, religion, sex, national origin, sexual orientation, gender identity, age, marital or family status, disability, Veteran status, and any other status. Zwift is proud to be an Equal Opportunity Employer. If you have a disability or special need that requires accommodation, please let us know by emailing careers@zwift.com.
+>
+> Zwift, Inc. is an Equal Opportunity Employer.
 
 **Required Skills**
 
-Mobile QA (iOS/Android), API testing, Jira, regression testing, SQL/NoSQL validation, CI/CD integration, Agile collaboration.
+- Senior QA strategy and test leadership from requirements to release.
+- Mobile app testing for iOS/Android, client-server apps, native apps, APIs, and servers.
+- Regression/feature testing, test plans/test cases, and reproducible bug reporting.
+- QA reporting, testability review, Jira/TestMo, and Agile/Scrum collaboration.
+- SQL/NoSQL data validation and CI/CD test integration.
+- Appium, Postman, JavaScript, and microservices testing.
 
 **AI Impact Analysis (1–2 sentences)**
 
-Senior QA roles increasingly blend manual validation with automation and platform-level telemetry. AI copilots can speed root-cause analysis and reduce repetitive regression effort.
+- This role emphasizes senior ownership of test strategy, specialized QA tools, reporting, and future testing methods, while also warning applicants to disclose AI-tool use during interviews.
+- AI may help analyze failures and draft reports, but the job signals that responsible and transparent AI use is becoming part of QA professionalism.
 
 **Evidence**
 
@@ -360,7 +423,7 @@ Senior QA roles increasingly blend manual validation with automation and platfor
 - Company: Cognizant
 - Location: Reston, VA (Remote)
 - Platform: SimplyHired
-- Posting date: 13 hours ago
+- Posting date: 01/06/2026
 - Job URL: https://www.simplyhired.com/job/Z384WERQ3uUYT3LmAcdqMvq7be7xD7HcPE8ILoBK1d45P_UUycFjSw
 - Salary: $53,477 - $92,500 a year
 - Requires AI/LLM/automation-AI skills? Y (automation/API testing)
@@ -402,24 +465,33 @@ Senior QA roles increasingly blend manual validation with automation and platfor
 >
 > Salary and Other Compensation
 > - Applications will be accepted until June 05, 2026.
-> - The annual salary for this position is between $53,477 - $92,500 depending on experience and qualifications.
-> - This position is also eligible for Cognizant’s discretionary annual incentive program.
+> - The annual salary for this position is between $53,477 - $92,500 depending on experience and other qualifications of the successful candidate.
+> - This position is also eligible for Cognizant’s discretionary annual incentive program, based on performance and subject to the terms of Cognizant’s applicable plans.
 >
 > Benefits
+>
+> Cognizant offers the following benefits for this position, subject to applicable eligibility requirements:
 > - Medical/Dental/Vision/Life Insurance.
 > - Paid holidays plus Paid Time Off.
 > - 401(k) plan and contributions.
 > - Long-term/Short-term Disability.
 >
 > Cognizant will only consider applicants for this position who are legally authorized to work in the United States without company sponsorship.
+> - Please note, this role is not able to offer visa transfer or sponsorship now or in the future*
 
 **Required Skills**
 
-Java, Selenium WebDriver, REST Assured, CI/CD tools (Jenkins/GitHub Actions), Jira, SDLC/STLC, Agile execution.
+- 5+ years software testing and test automation.
+- Java, Selenium WebDriver, and Rest Assured.
+- Functional, regression, smoke, and API testing.
+- Test case/test data/test documentation maintenance and requirement coverage analysis.
+- Jira defect tracking/retesting, Git, Jenkins/GitHub Actions CI/CD, SDLC/STLC, and Agile collaboration.
+- Scalable automation-framework design plus GitHub Copilot or AI-assisted testing tools.
 
 **AI Impact Analysis (1–2 sentences)**
 
-This role highlights enterprise demand for automation-first QA with API depth and CI discipline. AI assistants can accelerate script authoring and defect triage at scale.
+- This role directly names GitHub Copilot or AI-assisted tools as a differentiator for accelerating testing productivity.
+- Enterprise QA is moving toward automation frameworks, API coverage, and CI/CD integration where AI can help generate scripts, find coverage gaps, and speed defect investigation.
 
 **Evidence**
 
@@ -433,7 +505,7 @@ This role highlights enterprise demand for automation-first QA with API depth an
 - Company: Themesoft Inc
 - Location: Albany, NY (Remote)
 - Platform: SimplyHired
-- Posting date: 12d
+- Posting date: 20/05/2026
 - Job URL: https://www.simplyhired.com/job/ptTM58YVddK9WzZn6iqn01UByaalq4gjIXIW73GUMQDNUcEXbxgNUg
 - Salary: $50 - $55 an hour
 - Requires AI/LLM/automation-AI skills? N
@@ -448,18 +520,18 @@ This role highlights enterprise demand for automation-first QA with API depth an
 > - Travel may be required up to 25% of the time.
 > - Some overnight stays will be required, sometimes for the entire work week.
 > - An expense budget will be available for travel costs.
-> - Expense invoices will be due within 7 days of travel.
+>   - Expense invoices will be due within 7 days of travel.
 > - Remote work will be allowed when not traveling.
 >
 > Key Responsibilities:
 > - Evaluate child/youth’s records for compliance to applicable regulations.
-> - Clearly communicate evaluation requirements and follow up.
-> - Evaluate documentation against applicable State/Federal regulations.
-> - Collect data and documentation to support compliance findings.
-> - Utilize technology to convert hard copy documentation to electronic and submit via secure file transfer.
-> - Record, summarize, and communicate compliance findings for the Children’s Transformation Program.
-> - Assist in determining trends in non-compliance.
-> - Make appropriate and timely recommendations to project management.
+>   - Clearly communicate evaluation requirements and follow up.
+>   - Evaluate documentation against applicable State/Federal regulations.
+>   - Collect data and documentation to support compliance findings.
+>   - Utilize technology to convert hard copy documentation to electronic and submit via secure file transfer.
+>   - Record, summarize, and communicate compliance findings for the Children’s Transformation Program.
+>   - Assist in determining trends in non-compliance.
+>   - Make appropriate and timely recommendations to project management.
 > - Assist with the ongoing operationalization of project processes and procedures.
 > - Assist with all internal and external reporting.
 > - Build and maintain relationships with stakeholders to provide a high level of customer service.
@@ -489,11 +561,16 @@ This role highlights enterprise demand for automation-first QA with API depth an
 
 **Required Skills**
 
-Microsoft Outlook, customer service communication, quality control process adherence, remote coordination.
+- Healthcare compliance audits and chart/record reviews.
+- State/Federal regulation evaluation and Medicaid fee-for-service or Managed Care billing knowledge.
+- Evidence collection, secure file transfer, compliance-findings documentation, and trend analysis.
+- Internal/external reporting, stakeholder relationship management, and provider-site travel reviews.
+- MS Excel, Word, Outlook, Visio, PowerPoint, SharePoint, and EHR/Medicaid systems exposure.
 
 **AI Impact Analysis (1–2 sentences)**
 
-Clinical QA emphasizes traceability and controlled processes where reliability is critical. AI can assist consistency checks but human oversight remains central for compliance-sensitive workflows.
+- This is a non-AI clinical QA/compliance role focused on regulated healthcare documentation, Medicaid billing, and evidence-based findings.
+- AI could help summarize records or detect trends, but compliance decisions, privacy handling, and provider recommendations require accountable human review.
 
 **Evidence**
 
@@ -549,11 +626,17 @@ Clinical QA emphasizes traceability and controlled processes where reliability i
 
 **Required Skills**
 
-Quality assurance, analytical review, remote QA execution, issue validation.
+- LLM/AI quality evaluation and personalization-quality assessment.
+- Nuanced and ambiguous AI-response review.
+- Vietnamese-language accuracy, relevance, and context evaluation.
+- Data annotation or content moderation experience.
+- Structured quality feedback, analytical thinking, and remote collaboration with global operations teams.
+- Policy, law, ethics, linguistics, journalism, or CS background plus personal-data-source assessment workflow awareness.
 
 **AI Impact Analysis (1–2 sentences)**
 
-This role shows the blending of classic QA with AI-content evaluation tasks. Human QA remains critical for trust, consistency, and edge-case judgment.
+- This role is built around LLM personalization QA, where testers judge whether AI responses fit Vietnamese-language context, user relevance, and quality expectations.
+- It shows AI QA jobs need language expertise, ethical judgment, and careful handling of personal data sources, not only technical test automation.
 
 **Evidence**
 
@@ -563,63 +646,87 @@ This role shows the blending of classic QA with AI-content evaluation tasks. Hum
 
 #### 1.2.9 Posting 09
 
-- Job title: Quality Assurance Specialist (Vietnamese) | $11/hr - Remote
-- Company: Crossing Hurdles
-- Location: Vietnam (Remote)
+- Job title: QA Engineer – Hybrid HCM (Experience in ML/Data or Security Testing)
+- Company: Dwarves Foundation
+- Location: Ho Chi Minh City, Vietnam (Hybrid)
 - Platform: LinkedIn
-- Posting date: within 60-day window (promoted/current listing)
-- Job URL: https://www.linkedin.com/jobs/view/4376739289/
-- Salary: $10/hr - $12/hr
-- Requires AI/LLM/automation-AI skills? Y
+- Posting date: 1 week ago
+- Job URL: https://www.linkedin.com/jobs/view/4419144549/
+- Salary: $1,800 - $2,000
+- Requires AI/LLM/automation-AI skills? Y (ML/data testing scope)
 
 **Job Description**
 
-> **Full Job Description**
+> **About the job**
 >
-> Position: LLM – AI Quality Analyst (Personalization) – Vietnamese
+> Position: QA Engineer  
+> Location: Hybrid – Ho Chi Minh City  
+> Working time: 09:00 AM – 06:00 PM (Monday – Friday)  
+> Salary: $1,800 – $2,000
 >
-> Type: Short-Term Contract  
-> Location: Remote  
-> Commitment: 30–40 hours/week, 4-hour overlap with PST  
-> Engagement Length: 2 months  
-> Start Date: Immediate
+> 👉About the Role: This role focuses on automation testing across API, backend, and UI, with additional scope in ML features, security/authentication testing, and API partnerships/integration with client interactions
 >
-> Role Responsibilities
-> - Design multi-turn conversational prompts (1–5 turns) using personal context.
-> - Evaluate personalized AI responses for grounding, integration, and helpfulness.
-> - Assess correct usage of personal data and identify flawed inferences or hallucinations.
-> - Review integration quality to ensure personalization feels natural and not over-narrated.
-> - Conduct side-by-side (SxS) evaluation and ranking of model responses.
-> - Identify personalization errors, reasoning gaps, and grounding issues.
-> - Write clear, structured rationales referencing specific conversation turns.
-> - Extract and verify “Debug Info” to confirm correct data source utilization.
-> - Maintain strict data hygiene by deleting evaluation conversations.
+> Responsibilities
+> - Design, develop, and maintain automated test frameworks for API, backend, and UI layers.
+> - Implement and execute automated test scripts to ensure product quality and reliability.
+> - Collaborate closely with Engineering, Product, and DevOps teams throughout the SDLC.
+> - Apply Shift-Left Testing practices to identify defects early.
+> - Integrate automated tests into CI/CD pipelines.
+> - Perform test planning, execution, and defect tracking.
+> - Analyze test results and provide clear quality insights and recommendations.
+> - Contribute to testing standards, best practices, and continuous improvement initiatives.
+> - Support junior QEs through technical guidance and knowledge sharing.
+> - Participate in code reviews and quality discussions.
+>
+> Additional Responsibilities
+> - Validate Machine Learning (ML) related features and data outputs.
+> - Perform testing related to security, authentication, and authorization mechanisms.
+> - Test and validate API partnerships and third-party integrations with client systems.
+> - Ensure reliability and security of client-facing API interactions.
 >
 > Requirements
-> - Vietnamese proficiency (reading and writing).
-> - Strong experience in data annotation, AI quality evaluation, content moderation, or related roles.
-> - Strong analytical skills for evaluating nuanced and ambiguous AI outputs.
-> - Experience with creative prompt engineering and multi-turn conversations.
-> - Understanding of personalization concepts and AI response evaluation.
-> - High attention to detail for SxS comparisons.
-> - Excellent written communication and feedback documentation skills.
-> - BS/BA degree or equivalent experience in a relevant field.
-> - Willingness to use a primary personal Google account with enabled personal data sources.
-> - Self-motivated and able to work independently in a remote setup.
-> - Desktop/laptop with reliable internet connection.
+> - 5+ years of experience in Quality Control / Test Automation.
+> - Strong experience in automated testing across API, backend, and UI.
+> - Hands-on experience with Playwright, Cypress, RestAssured, and Postman.
+> - Proficiency in one or more programming languages: Golang, TypeScript, Ruby, Python, or Java.
+> - Solid understanding of software testing methodologies and SDLC.
+> - Experience integrating automated tests into CI/CD pipelines.
+> - Familiarity with Docker and containerized test environments.
+> - Strong analytical and communication skills.
+> - Good English communication skills.
 >
-> Application Process
-> - Fill out the application form.
-> - Complete the ICF.
-> - Complete the assessment.
+> Preferred Qualifications
+> - Experience testing Machine Learning (ML) workflows or ML-related features.
+> - Knowledge of security testing, including authentication, authorization, and encryption.
+> - Experience validating API integrations or third-party services.
+> - Experience working in microservices-based architectures.
+> - Familiarity with Kubernetes.
+>
+> Candidate Profile
+> - Strong hands-on automation engineer with senior-level ownership
+> - Quality-driven mindset with high attention to detail
+> - Comfortable working in fast-paced engineering environments 
+> --------------------------------------------------
+>
+> Learn more about us:
+>
+> 🌐 Website: https://d.foundation
+>
+> 🔗 LinkedIn: https://www.linkedin.com/company/dwarvesf/
 
 **Required Skills**
 
-QA analysis, linguistic quality checks, remote collaboration, structured defect reporting.
+- Senior test automation and API/backend/UI automation-framework design.
+- Automated test script implementation with Playwright, Cypress, RestAssured, and Postman.
+- Golang, TypeScript, Ruby, Python, or Java programming.
+- SDLC, Shift-Left Testing, CI/CD pipeline integration, Docker, and containerized test environments.
+- Defect tracking, quality insights, code review participation, microservices, and Kubernetes exposure.
+- ML feature/data-output validation, security/authentication/authorization/encryption testing, and API partnership/third-party integration testing.
 
 **AI Impact Analysis (1–2 sentences)**
 
-Language-focused QA for AI systems is growing fast because model output quality varies by locale. Human evaluators provide nuance that automated checks still miss.
+- This role shows QA expanding into ML-related feature validation, where correctness includes model/data outputs in addition to normal API, backend, and UI behavior.
+- It also links AI-era QA with security, authentication, and third-party API reliability because ML features often depend on integrated data pipelines and client-facing services.
 
 **Evidence**
 
@@ -640,7 +747,7 @@ Language-focused QA for AI systems is growing fast because model output quality 
 
 **Job Description**
 
-> **Full Job Description**
+> **About the job**
 >
 > Position: Audio Engineer
 >
@@ -671,11 +778,16 @@ Language-focused QA for AI systems is growing fast because model output quality 
 
 **Required Skills**
 
-Audio QA, structured quality evaluation, defect discovery, analytical reporting.
+- Audio quality assurance and critical listening with studio monitors/high-end headphones.
+- Artifact/anomaly detection and severity classification.
+- Audio cleanup, restoration, and editing workflows.
+- Data annotation for audio/video and labeling/review/quality-control processes for large datasets.
+- Concise issue notes for AI/ML development, distributed-team collaboration, written/verbal English communication, and independent remote work.
 
 **AI Impact Analysis (1–2 sentences)**
 
-Multimodal AI products drive demand for specialized QA (audio/video/text), not only generic software testing. This role indicates QA specialization trend in AI-era job market.
+- This role shows multimodal AI creating specialized QA demand for audio datasets used in model training.
+- The tester's domain expertise turns subjective audio defects into labeled, severity-classified feedback that improves AI/ML data quality.
 
 **Evidence**
 
@@ -710,23 +822,26 @@ Multimodal AI products drive demand for specialized QA (audio/video/text), not o
 
 ### 3.3 Test Cases (15 total)
 
-| TC ID | Objective | Input / Preconditions | Steps | Expected Result | Actual Result | Verdict (Pass/Fail) | Edge Case? (Y/N) | AI Generated? (Y/N) | Notes |
-|---|---|---|---|---|---|---|---|---|---|
-| TC-01 | Verify Stop button turns fan off | Fan plugged in. Button 1, 2, or 3 is active. | 1. Turn fan on at any speed. 2. Press button 0. 3. Observe blades and airflow. | Fan motor stops. No airflow. Speed button 0 remains selected. |  |  | N | Y | Functional |
-| TC-02 | Verify Low speed button works | Fan plugged in. Fan is stopped. | 1. Press button 1. 2. Observe blade movement and airflow. | Fan starts at low speed. Airflow is weak but stable. No abnormal noise. |  |  | N | Y | Functional |
-| TC-03 | Verify Medium speed button works | Fan plugged in. Fan is stopped. | 1. Press button 2. 2. Observe blade movement and airflow. | Fan starts at medium speed. Airflow is stronger than Low. No abnormal noise. |  |  | N | Y | Functional |
-| TC-04 | Verify High speed button works | Fan plugged in. Fan is stopped. | 1. Press button 3. 2. Observe blade movement and airflow. | Fan starts at high speed. Airflow is strongest. Fan remains stable. |  |  | N | Y | Functional / Safety |
-| TC-05 | Verify speed changes from Low to Medium to High | Fan plugged in. Fan is stopped. | 1. Press button 1. 2. Press button 2. 3. Press button 3. 4. Compare airflow after each press. | Fan changes speed according to selected button. Airflow increases from Low to Medium to High. |  |  | N | Y | Functional |
-| TC-06 | Verify speed changes from High to Medium to Low | Fan plugged in. Fan running at High speed. | 1. Press button 2. 2. Press button 1. 3. Observe airflow and noise. | Fan decreases speed correctly. No sudden stop, vibration, or abnormal sound. |  |  | N | Y | Functional |
-| TC-07 | Verify pressing Stop while fan is at High speed | Fan plugged in. Fan running at High speed. | 1. Press button 3. 2. Wait until stable. 3. Press button 0. 4. Observe stopping behavior. | Fan stops safely. Blades slow down normally. No spark, burning smell, or sudden mechanical issue. |  |  | Y | Y | Physical safety edge case |
-| TC-08 | Verify only one speed button can stay selected | Fan plugged in. | 1. Press button 1. 2. Press button 2. 3. Press button 3. 4. Check physical button states. | Only the last selected speed button remains active. Previous button releases or becomes inactive. |  |  | N | Y | Usability / Functional |
-| TC-09 | Verify rotational louver knob turns wind direction rotation on | Fan plugged in. Fan running at Low/Medium/High speed. | 1. Press button 2. 2. Turn center knob to rotation ON position. 3. Observe front louver movement. | Rotational louver starts rotating. Wind direction changes smoothly. |  |  | N | Y | Functional |
-| TC-10 | Verify rotational louver knob turns wind direction rotation off | Fan plugged in. Fan running. Louver rotation is ON. | 1. Turn center knob to OFF position. 2. Observe louver movement. | Rotational louver stops rotating. Fan continues blowing at selected speed. |  |  | N | Y | Functional |
-| TC-11 | Verify louver rotation speed adjustment by knob | Fan plugged in. Fan running. Knob supports adjustable rotation speed. | 1. Turn knob slowly from low rotation setting to higher setting. 2. Observe louver rotation speed. | Louver rotation speed changes according to knob position. Movement remains smooth. |  |  | N | Y | Functional / Usability |
-| TC-12 | Verify louver knob behavior when fan speed is 0 | Fan plugged in. Speed button 0 selected. | 1. Press button 0. 2. Turn louver knob ON. 3. Observe fan blades and louver. | Fan blades stay stopped. Louver should not rotate if main motor power is off, or should behave according to product design without unsafe movement. |  |  | Y | Y | Edge case: knob ON while fan stopped |
-| TC-13 | Verify buttons are easy to press and labels are understandable | Fan placed on normal use surface. | 1. Inspect button labels 0, 1, 2, 3. 2. Press each button once. 3. Observe tactile feedback. | Labels are visible and understandable. Buttons are not too hard to press. User can identify Stop/Low/Medium/High easily. |  |  | N | Y | Usability |
-| TC-14 | Verify fan remains physically stable at High speed with louver rotation ON | Fan plugged in. Placed on flat surface. | 1. Press button 3. 2. Turn louver knob ON/high rotation. 3. Observe fan body for 1 minute. | Fan does not shake excessively, fall, or move from position. No unsafe vibration. |  |  | Y | Y | Physical safety edge case |
-| TC-15 | Verify front case/grill prevents finger contact with moving blades | Fan plugged in. Fan running at Low speed. Use safe non-body object only. | 1. Visually inspect front grill spacing. 2. Use a thin safe test object near grill without forcing it. 3. Do not insert fingers. | Grill prevents accidental contact with moving blades during normal use. No sharp edges on front case. |  |  | Y | Y | Physical safety. Do not use fingers. |
+- TC 01: ấn 0 ko có stop
+- 
+
+| **TC ID** |                                **Objective**                               |                         **Input / Preconditions**                        |                                                             **Steps**                                                            |                                                                 **Expected Result**                                                                 | **Actual Result** | **Verdict (Pass/Fail)** |
+|:---------:|:--------------------------------------------------------------------------:|:------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------:|:-----------------------:|
+| **TC-01** | Verify Stop button turns fan off                                           | Fan plugged in.<br> Button 1, 2, or 3 is active.                         | 1. Turn fan on at any speed.<br> 2. Press button 0.<br> 3. Observe blades and airflow.                                           | Fan motor stops.<br> No airflow.<br>                                                                                                                |                   |                         |
+| **TC-02** | Verify Low speed button works                                              | Fan plugged in.<br> Fan is stopped.                                      | 1. Press button 1. 2. Observe blade movement and airflow.                                                                        | Fan starts at low speed. Airflow is weak but stable. No abnormal noise.                                                                             |                   |                         |
+| **TC-03** | Verify Medium speed button works                                           | Fan plugged in. Fan is stopped.                                          | 1. Press button 2. 2. Observe blade movement and airflow.                                                                        | Fan starts at medium speed. Airflow is stronger than Low. No abnormal noise.                                                                        |                   |                         |
+| **TC-04** | Verify High speed button works                                             | Fan plugged in. Fan is stopped.                                          | 1. Press button 3. 2. Observe blade movement and airflow.                                                                        | Fan starts at high speed. Airflow is strongest. Fan remains stable.                                                                                 |                   |                         |
+| **TC-05** | Verify speed changes from Low to Medium to High                            | Fan plugged in. Fan is stopped.                                          | 1. Press button 1. 2. Press button 2. 3. Press button 3. 4. Compare airflow after each press.                                    | Fan changes speed according to selected button. Airflow increases from Low to Medium to High.                                                       |                   |                         |
+| **TC-06** | Verify speed changes from High to Medium to Low                            | Fan plugged in. Fan running at High speed.                               | 1. Press button 2. 2. Press button 1. 3. Observe airflow and noise.                                                              | Fan decreases speed correctly. No sudden stop, vibration, or abnormal sound.                                                                        |                   |                         |
+| **TC-07** | Verify pressing Stop while fan is at High speed                            | Fan plugged in. Fan running at High speed.                               | 1. Press button 3. 2. Wait until stable. 3. Press button 0. 4. Observe stopping behavior.                                        | Fan stops safely. Blades slow down normally. No spark, burning smell, or sudden mechanical issue.                                                   |                   |                         |
+| **TC-08** | Verify only one speed button can stay selected                             | Fan plugged in.                                                          | 1. Press button 1. 2. Press button 2. 3. Press button 3. 4. Check physical button states.                                        | Only the last selected speed button remains active. Previous button releases or becomes inactive.                                                   |                   |                         |
+| **TC-09** | Verify rotational louver knob turns wind direction rotation on             | Fan plugged in. Fan running at Low/Medium/High speed.                    | 1. Press button 2. 2. Turn center knob to rotation ON position. 3. Observe front louver movement.                                | Rotational louver starts rotating. Wind direction changes smoothly.                                                                                 |                   |                         |
+| **TC-10** | Verify rotational louver knob turns wind direction rotation off            | Fan plugged in. Fan running. Louver rotation is ON.                      | 1. Turn center knob to OFF position. 2. Observe louver movement.                                                                 | Rotational louver stops rotating. Fan continues blowing at selected speed.                                                                          |                   |                         |
+| **TC-11** | Verify louver rotation speed adjustment by knob                            | Fan plugged in. Fan running. Knob supports adjustable rotation speed.    | 1. Turn knob slowly from low rotation setting to higher setting. 2. Observe louver rotation speed.                               | Louver rotation speed changes according to knob position. Movement remains smooth.                                                                  |                   |                         |
+| **TC-12** | Verify louver knob behavior when fan speed is 0                            | Fan plugged in. Speed button 0 selected.                                 | 1. Press button 0. 2. Turn louver knob ON. 3. Observe fan blades and louver.                                                     | Fan blades stay stopped. Louver should not rotate if main motor power is off, or should behave according to product design without unsafe movement. |                   |                         |
+| **TC-13** | Verify buttons are easy to press and labels are understandable             | Fan placed on normal use surface.                                        | 1. Inspect button labels 0, 1, 2, 3. 2. Press each button once. 3. Observe tactile feedback.                                     | Labels are visible and understandable. Buttons are not too hard to press. User can identify Stop/Low/Medium/High easily.                            |                   |                         |
+| **TC-14** | Verify fan remains physically stable at High speed with louver rotation ON | Fan plugged in. Placed on flat surface.                                  | 1. Press button 3. 2. Turn louver knob ON/high rotation. 3. Observe fan body for 1 minute.                                       | Fan does not shake excessively, fall, or move from position. No unsafe vibration.                                                                   |                   |                         |
+| **TC-15** | Verify front case/grill prevents finger contact with moving blades         | Fan plugged in. Fan running at Low speed. Use safe non-body object only. | 1. Visually inspect front grill spacing. 2. Use a thin safe test object near grill without forcing it. 3. Do not insert fingers. | Grill prevents accidental contact with moving blades during normal use. No sharp edges on front case.                                               |                   |                         |
 
 ### 3.4 Test Execution Video Log (>=5)
 
@@ -797,13 +912,13 @@ Use this exact block and edit placeholders:
 
 ---
 
-## 9) Appendix A — AI Audit Report
-
-> Paste entries from `ai-02-ai-audit-report-template.md`
-
-## 10) Appendix B — Prompt Log
+## 9) Appendix A — Prompt Log
 
 > Paste from `hw01-prompt-log-template.md`
+
+## 10) Appendix B - AI Audit Report
+
+> Paste entries from `ai-02-ai-audit-report-template.md`
 
 ## 11) Appendix C — AI Disclosure Form
 

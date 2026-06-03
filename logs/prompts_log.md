@@ -565,3 +565,10 @@ Be aware of the AI Collaboration Protocol. Because you requested me to generate 
 | TC-13 | Verify buttons are easy to press and labels are understandable | Fan placed on normal use surface. | 1. Inspect button labels 0, 1, 2, 3. 2. Press each button once. 3. Observe tactile feedback. | Labels are visible and understandable. Buttons are not too hard to press. User can identify Stop/Low/Medium/High easily. |  |  | N | Y | Usability |
 | TC-14 | Verify fan remains physically stable at High speed with louver rotation ON | Fan plugged in. Placed on flat surface. | 1. Press button 3. 2. Turn louver knob ON/high rotation. 3. Observe fan body for 1 minute. | Fan does not shake excessively, fall, or move from position. No unsafe vibration. |  |  | Y | Y | Physical safety edge case |
 | TC-15 | Verify front case/grill prevents finger contact with moving blades | Fan plugged in. Fan running at Low speed. Use safe non-body object only. | 1. Visually inspect front grill spacing. 2. Use a thin safe test object near grill without forcing it. 3. Do not insert fingers. | Grill prevents accidental contact with moving blades during normal use. No sharp edges on front case. |  |  | Y | Y | Physical safety. Do not use fingers. |
+
+# Rewrite skills + ai impact
+
+15:35 03/06/2026
+
+"In requirement 01 of report.md, for each job, based on the job description, rewrite the Required skills and AI Impact Analysis."
+![alt text](image-28.png)
