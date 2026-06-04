@@ -1,26 +1,3 @@
-# 1. Requirements analysis
-
-## Prompt
-15:27 01/06/2026
-
-![alt text](image-5.png)
-
-## Output
-
-![alt text](image-6.png)
-
-![alt text](image-7.png)
-
-![alt text](image-8.png)
-
-![alt text](image-9.png)
-
-![alt text](image-10.png)
-
-![alt text](image-11.png)
-
-![alt text](image-12.png)
-
 # 2. Markdown templates generated
 
 ## Prompt
@@ -815,3 +792,140 @@ Multimodal AI products drive demand for specialized QA (audio/video/text), not o
 * **Severity:** Critical (CVSS 9.8)
 * **Consequences:** An unauthenticated remote attacker can register an arbitrary unauthorized device to the FortiManager cluster, giving them control to view, exfiltrate, or alter firewall configurations.
 * **Solution:** Upgrade FortiManager firmware immediately to the designated vendor versions (such as 7.6.1, 7.4.5, or 7.2.8).
+
+# 11. QA/QC role mindmap
+
+## Prompt
+
+08:15 04/06/2026
+Gemini 3.1 Pro
+
+> Using the PDF file I provided, generate the QA/QC role mindmap in mermaid code.
+![alt text](image-5.png)
+
+## Output
+
+```mermaid
+mindmap
+  root((QA/QC Roles in AI Testing<br>ISTQB CT-AI))
+    Core Testing Roles
+      Testers and Test Engineers
+        Input Data Testing
+        ML Model Testing
+        Component and System Testing
+        AI-Specific Test Techniques
+          Pairwise Testing
+          Metamorphic Testing
+          Back-to-Back Testing
+          A/B Testing
+      Test Analysts
+        Functional Performance Metrics
+          Confusion Matrix
+          Precision and Recall
+          F1-Score
+        Evaluating Quality Characteristics
+          Flexibility and Adaptability
+          Autonomy and Evolution
+          Bias and XAI Assessment
+      Data Analysts
+        ML Data Quality Management
+          Dataset Quality Issues
+          Wrong or Incomplete Data
+          Mislabeled Data Detection
+        Data Preparation Validation
+        Data Labeling Verification
+      Test Managers and Consultants
+        Selecting Test Approaches
+        Risk Mitigation in ML Workflows
+        Preventing Automation Bias
+        Virtual Test Environments Strategy
+      User Acceptance Testers
+        Testing Autonomous Systems
+        Safety and Ethics Compliance
+        Transparency and Explainability
+    Cross-Functional Roles
+      Software Developers
+        Component Level Testing
+        Neural Network Implementation
+        White-box Coverage Measures
+          Sign-Change Coverage
+          Value-Change Coverage
+          Sign-Sign Coverage
+      Project and Quality Managers
+        Acceptance Criteria Definition
+        Standards Compliance Assurance
+        System Specification Reviews
+      Business Analysts
+        AI Specification Challenges
+        Concept Drift Tracking
+        Operational Metrics Alignment
+```
+Key Role Mappings from the Syllabus:
+- Testers & Test Engineers: Tasked with executing diverse test levels (Input Data, ML Model, Component, Integration, System, Acceptance) and implementing specialized test design techniques like Metamorphic Testing (MT) or Pairwise Testing.
+- Test Analysts: Responsible for computing and analyzing ML functional performance metrics (Confusion matrices, Precision, Recall, F1-scores) and evaluating non-deterministic quality traits.
+- Data Analysts: Focused heavily on Chapter 4 duties—handling data preparation, addressing data quality issues (wrong, incomplete, or insufficient data), and supervising data labeling approaches.
+- Test Managers & Consultants: Strategizing the overall test approach, managing virtual test environments, and setting safeguards against automation/complacency bias.
+- Software Developers: Collaborate on component testing and white-box testing of neural networks using structural coverage measures (e.g., Sign-Sign or Sign-Change coverage).
+- Introduce 3 deliberate mistakes into this mindmap for my assignment
+- Create a detailed responsibility matrix for these roles
+- Generate a Markdown table detailing the specific test techniques for each role
+
+![alt text](image-6.png)
+
+![alt text](image-7.png)
+
+# 12. Generate 15 testcases
+
+## Prompt
+
+> - 19:26 04/06/202
+> - Model: GPT 5.5
+
+```
+Act as an expert QA/QC Test Engineer. I need to design test cases for a physical product for Requirement 3 section in report.md.
+
+Product Specification:
+- Product Type: Domestic Stand Fan (Model: LIFAN Đ-16RC-0)
+- Control Interface: It has 5 electronic/soft buttons on the control panel:
+  1. ON/OFF (1 single button to toggle power status)
+  2. SPEED (Cycles through wind speeds: Low - Medium - High)
+  3. TIMER (Increments time delay to turn off the fan automatically)
+  4. SWING (Toggles horizontal oscillation on and off)
+  5. MODE (Cycles through wind profiles: Normal, Natural, Sleep)
+
+Task Requirements:
+- Generate exactly 15 comprehensive test cases covering Functional, Usability, and Interoperability scenarios based on the interface above.
+- Output the result strictly in a single Markdown table matching the following column structure:
+
+| TC ID | Objective | Input / Pre-conditions | Execution Steps | Expected Result | Actual Result | Verdict |
+
+Instructions for columns:
+1. TC ID: Use numbering format starting from TC01 to TC15.
+2. Actual Result: Leave this column completely empty (or put "[Pending Physical Execution]") so I can fill it out manually after testing the real device.
+3. Verdict: Leave this column empty (or put "[Pending]").
+4. Ensure all descriptions, steps, and expected results are written in technical English and highly precise for physical hardware testing.
+
+Write them into report.md in the Requirement 3 section.   
+```
+
+![alt text](image-8.png)
+
+## Output
+
+| TC ID | Objective | Input / Pre-conditions | Execution Steps | Expected Result | Actual Result | Verdict |
+|---|---|---|---|---|---|---|
+| TC01 | [Functional] Verify that the ON/OFF button powers on the fan from standby/off state. | Fan is assembled safely, connected to rated AC supply, and currently OFF. Control panel is visible. | 1. Press the ON/OFF button once.<br>2. Observe fan operation and panel indicators for 5 seconds. | Fan changes to ON state. Fan motor runs and produces airflow. Control panel shows active power status. No other function requires manual activation to start basic operation. | [Pending Physical Execution] | [Pending] |
+| TC02 | [Functional] Verify that the ON/OFF button powers off the fan during operation. | Fan is ON and producing airflow at any valid speed. | 1. Press the ON/OFF button once.<br>2. Observe motor, airflow, swing state, and panel indicators for 5 seconds. | Fan changes to OFF state. Motor stops, airflow stops, oscillation stops if active, and control panel no longer indicates active operation except any allowed standby indication. | [Pending Physical Execution] | [Pending] |
+| TC03 | [Functional] Verify SPEED cycles from Low to Medium. | Fan is ON. Current speed indicator is Low. | 1. Press SPEED once.<br>2. Observe the speed indicator and airflow intensity. | Speed changes from Low to Medium. Medium speed indicator is active. Airflow becomes stronger than Low. | [Pending Physical Execution] | [Pending] |
+| TC04 | [Functional] Verify SPEED cycles from Medium to High. | Fan is ON. Current speed indicator is Medium. | 1. Press SPEED once.<br>2. Observe the speed indicator and airflow intensity. | Speed changes from Medium to High. High speed indicator is active. Airflow becomes stronger than Medium. | [Pending Physical Execution] | [Pending] |
+| TC05 | [Functional / Boundary] Verify SPEED wraps from High back to Low. | Fan is ON. Current speed indicator is High. | 1. Press SPEED once.<br>2. Observe the speed indicator and airflow intensity. | Speed changes from High to Low. Low speed indicator is active. Airflow returns to the lowest available intensity. No undefined speed state appears. | [Pending Physical Execution] | [Pending] |
+| TC06 | [Functional] Verify MODE cycles from Normal to Natural. | Fan is ON. Current mode indicator is Normal. | 1. Press MODE once.<br>2. Observe the mode indicator and airflow profile for at least 10 seconds. | Mode changes from Normal to Natural. Natural mode indicator is active. Fan remains ON and uses the Natural wind profile. | [Pending Physical Execution] | [Pending] |
+| TC07 | [Functional] Verify MODE cycles from Natural to Sleep. | Fan is ON. Current mode indicator is Natural. | 1. Press MODE once.<br>2. Observe the mode indicator and airflow profile for at least 10 seconds. | Mode changes from Natural to Sleep. Sleep mode indicator is active. Fan remains ON and uses the Sleep wind profile. | [Pending Physical Execution] | [Pending] |
+| TC08 | [Functional / Boundary] Verify MODE wraps from Sleep back to Normal. | Fan is ON. Current mode indicator is Sleep. | 1. Press MODE once.<br>2. Observe the mode indicator and airflow profile for at least 10 seconds. | Mode changes from Sleep to Normal. Normal mode indicator is active. No undefined wind profile appears. | [Pending Physical Execution] | [Pending] |
+| TC09 | [Functional] Verify SWING enables horizontal oscillation. | Fan is ON. Swing is currently OFF. Fan head has safe clearance for oscillation. | 1. Press SWING once.<br>2. Observe fan head movement and swing indicator for 10 seconds. | Horizontal oscillation starts. Swing indicator shows ON state. Fan continues producing airflow at the selected speed and mode. | [Pending Physical Execution] | [Pending] |
+| TC10 | [Functional] Verify SWING disables horizontal oscillation. | Fan is ON. Swing is currently ON and horizontal oscillation is visible. | 1. Press SWING once.<br>2. Observe fan head movement and swing indicator for 10 seconds. | Horizontal oscillation stops. Swing indicator shows OFF state. Fan continues producing airflow at the selected speed and mode. | [Pending Physical Execution] | [Pending] |
+| TC11 | [Functional] Verify TIMER increments from no timer to the first supported timer interval. | Fan is ON. Timer is currently OFF or no timer indicator is active. | 1. Press TIMER once.<br>2. Observe timer indicator immediately after the press. | Timer changes from OFF to the first supported auto-off interval. The corresponding timer indicator is active. Fan remains ON. | [Pending Physical Execution] | [Pending] |
+| TC12 | [Functional / Boundary] Verify TIMER cycles through all supported intervals and returns to no-timer state. | Fan is ON. Timer indicator is visible. Manufacturer-supported timer interval markings are known from the panel/manual. | 1. Press TIMER repeatedly one step at a time.<br>2. After each press, record the active timer indicator.<br>3. Continue until the sequence passes the maximum supported interval. | Timer indicator advances exactly one interval per press. After the maximum supported interval, the next TIMER press returns to no-timer/OFF timer state. No skipped, duplicated, or undefined timer state appears. | [Pending Physical Execution] | [Pending] |
+| TC13 | [Functional / Boundary] Verify auto-off behavior at the shortest timer interval. | Fan is ON. Timer can be set to the shortest supported interval. Test environment allows waiting for the full interval. | 1. Press TIMER until the shortest supported interval is selected.<br>2. Do not press any other button.<br>3. Wait until the selected interval elapses.<br>4. Observe fan state after timeout. | Fan remains ON before the interval expires. When the selected interval elapses, fan automatically changes to OFF state. Motor, airflow, and oscillation stop. | [Pending Physical Execution] | [Pending] |
+| TC14 | [Interoperability] Verify SPEED change while MODE and SWING are active. | Fan is ON. Mode is Natural or Sleep. Swing is ON. Current speed is Low or Medium. | 1. Press SPEED once.<br>2. Observe speed indicator, mode indicator, swing indicator, airflow, and oscillation for 10 seconds. | Speed changes to the next valid speed. Existing MODE selection remains unchanged. SWING remains ON. Fan continues operating without reset or interruption. | [Pending Physical Execution] | [Pending] |
+| TC15 | [Usability] Verify control-panel button feedback and single-function response. | Fan is connected to rated AC supply. Tester can clearly view all button labels and indicators. | 1. Press ON/OFF, SPEED, TIMER, SWING, and MODE one at a time under valid operating conditions.<br>2. After each press, observe whether only the intended function changes.<br>3. Confirm the associated indicator or physical behavior is recognizable. | Each button press is accepted with clear visual or physical feedback. Button labels are understandable. Each button changes only its assigned function, with no accidental activation of adjacent controls. | [Pending Physical Execution] | [Pending] |
