@@ -1,17 +1,18 @@
-# HW01 — Prompt Log Template
+# AI-02 — AI Audit Report Template (5 Sections per Artifact)
 
-## 1. Requirement 1
+## Entry A-01
 
-### 1.1. Info
+### 1) Prompt + Tool
+- Tool name: `GPT-5.5`
+- Timestamp: `16:12 01/06/2026`
+- Full prompt (verbatim): "Read the requirements\2026.HW01.Jobs.Defects.PhysicalProduct_En.pdf, complete Requirement 1 - QA/QC Job Market 2026+ using chrome-devtools-mcp. Focus on LinkedIn first. After that, complete the Requirement 1 section in report.md, using templates\hw01-job-postings-template.md."
 
-> - Timestamp: 16:12 01/06/2026
-> - Model: GPT-5.4
-> - Prompt: "Read the requirements\2026.HW01.Jobs.Defects.PhysicalProduct_En.pdf, complete Requirement 1 - QA/QC Job Market 2026+ using chrome-devtools-mcp. Focus on LinkedIn first. After that, complete the Requirement 1 section in report.md, using templates\hw01-job-postings-template.md."
+![alt text](logs/image-2.png)
 
-![alt text](image-2.png)
 
-### 1.2. Output
+### 2) Full AI Output
 
+```
 ## 1) Requirement 1 — QA/QC Job Market 2026+ (40 pts)
 
 ### 1.1 Summary
@@ -258,130 +259,109 @@ Multimodal AI products drive demand for specialized QA (audio/video/text), not o
 
 ### Evidence
 ![alt text](req1-images/req1-linkedin-posting-10.png)
+```
 
 
+### 3) Verdict
+- Verdict: `INVALID`
+- Reason: The AI output contains "Duplicate data" (Job 9 repeats Job 8), "Wrong data" (dead links), and "Incomplete data" (summarized JDs) as defined in the quality aspects of ISTQB CT-AI Section 4.3. Most importantly, it fails the "Anti-AI-Cheat mechanisms" specified in the HW01 requirements, which mandate that screenshots must show the student's account name
 
-# 5. Reformatting Requirement 1
+### 4) Reasoning (2–5 sentences)
 
-## Prompt
+According to ISTQB CT-AI Section 4.4, issues such as wrong, incomplete, and duplicate data lead to "Reduced accuracy" and a flawed final model or artifact
+. Additionally, the HW01 instructions explicitly state that any violation of anti-cheat regulations, such as missing the login/username in job-posting screenshots, results in a score of zero
+. Therefore, since the AI failed to meet both the technical data quality standards and the specific academic integrity constraints of the assignment, the output is considered invalid
+.
 
-14:31 02/06/2026
+### 5) Student Fix
 
-![image-25](/logs/image-25.png)
+- I changed the job 3 which has dead link.
+- I took all the screen shots manually.
+- Evidence is in report.md. I don't copy it again to avoid too long content.
 
-"In Requirement 1 of report.md, do for me 2 tasks:
-  - Basded on the posting 01 format, format the other postings.
-  - Using chrome-devtools-mcp@latest to copy the whole job description for each posting.
-  - I allow chrome-devtools-mcp@latest to open new tabs and take screenshots."
+---
 
-# 6. Copy exact jd
+## Entry A-02
 
-## Prompt
-22:58 02/06/2025
+### 1) Prompt + Tool
+- Tool name: `GPT-5.4`
+- Timestamp: `22:58 02/06/2025`
+- Full prompt (verbatim): ""In the Requirement 1 section of report.md, using chrome-devtools-mcp@latest, visit all the websites of the jobs to copy the full job description and put them into quotation (>). Reformat other jobs section to be similar as the posting 01."
 
-"In the Requirement 1 section of report.md, using chrome-devtools-mcp@latest, visit all the websites of the jobs to copy the full job description and put them into quotation (>). Reformat other jobs section to be similar as the posting 01."
+![alt text](logs/image-26.png)
 
-![alt text](image-26.png)
+### 2) Full AI Output
 
-# 7. Req 3: Testcases generated
+You can navigate to report.md to see the full job descriptions of 10 QA/QC jobs. I do not copy here to avoid long content.
 
-## Prompt
-00:05 03/06/2026
+### 3) Verdict
+- Verdict: `VALID`
+- Reason: The AI successfully demonstrated "Data Acquisition" and "Data Transformation" by gathering full job descriptions from external sources and reformatting them into the specified quotation format without introducing "Incomplete data" or "Wrong data"
 
-❯ For Requirement 3 of my Software Testing assignment, please generate 15 test cases for a physical product: a domestic fan from
-  the brand "Lifan".
-  
-  Product Specification:
-  - It has 4 physical buttons for wind speed control: 0 (Stop) - 1 (Low) - 2 (Medium) - 3 (High).
-  - At the center of the front case, there is a physical knob to turn on/off and adjust the wind direction/rotation speed
-  (rotational louver).
+### 4) Reasoning (2–5 sentences)
 
-  Formatting Requirements:
-  - Please output the test cases strictly using the following Markdown template 
-  templates\hw01-physical-device-test-cases-template.md. 
-  - Ensure the section is numbered under headings matching standard report documentation style.
-  - Focus on functional, usability, and physical safety test cases.
+The AI met the "Understand" objective by correctly acquiring, processing, and applying knowledge from external job websites. By extracting full descriptions rather than summaries, it avoided the data quality issue of "Incomplete data" as defined in ISTQB CT-AI Section 4.3, thereby satisfying the "Functional Suitability" required for Requirement 1. Additionally, the consistent reformatting of the jobs into quotations (>) serves as a successful "Data Transformation" within the data preparation workflow.
 
-  ![alt text](image-27.png)
+### 5) Student Fix
+- Corrected artifact: Again, you can navigate to report.md to see the full job descriptions of 10 QA/QC jobs. I do not copy here to avoid long content.
 
-## Output
+- What I did:
+  - Data Integrity Verification: Manually cross-checked the extracted job descriptions against the source URLs to ensure no data was truncated or hallucinated.
+  - Formatting Audit: Confirmed that the AI correctly applied the blockquote (>) syntax to all 10 entries as requested in the prompt.
+  - Requirement Validation: Verified that the final artifact in report.md contains all mandatory elements for Requirement 1, including full descriptions and required skills.
 
-## 3) Requirement 3 — Test Cases for ONE Physical Product (40 pts)
+---
 
-### 3.1 Device Declaration
-- Device type: Domestic fan with physical speed buttons and rotational louver knob
-- Brand: Lifan
-- Model: `<not specified>`
-- Year: `<not specified>`
-- Serial number (masked middle 4 chars): `<not available>`
+## Entry A-03
 
-### 3.2 Required Device Evidence
-- Device photo + student ID in same frame: `<file path>`
+### 1) Prompt + Tool
+- Tool name: `GPT-5.5`
+- Timestamp: `15:35 03/06/2026`
+- Full prompt (verbatim): "In requirement 01 of report.md, for each job, based on the job description, rewrite the Required skills and AI Impact Analysis."
 
-### 3.3 Test Cases (15 total)
+![alt text](logs/image-28.png)
 
-| TC ID | Objective | Input / Preconditions | Steps | Expected Result | Actual Result | Verdict (Pass/Fail) | Edge Case? (Y/N) | AI Generated? (Y/N) | Notes |
-|---|---|---|---|---|---|---|---|---|---|
-| TC-01 | Verify Stop button turns fan off | Fan plugged in. Button 1, 2, or 3 is active. | 1. Turn fan on at any speed. 2. Press button 0. 3. Observe blades and airflow. | Fan motor stops. No airflow. Speed button 0 remains selected. |  |  | N | Y | Functional |
-| TC-02 | Verify Low speed button works | Fan plugged in. Fan is stopped. | 1. Press button 1. 2. Observe blade movement and airflow. | Fan starts at low speed. Airflow is weak but stable. No abnormal noise. |  |  | N | Y | Functional |
-| TC-03 | Verify Medium speed button works | Fan plugged in. Fan is stopped. | 1. Press button 2. 2. Observe blade movement and airflow. | Fan starts at medium speed. Airflow is stronger than Low. No abnormal noise. |  |  | N | Y | Functional |
-| TC-04 | Verify High speed button works | Fan plugged in. Fan is stopped. | 1. Press button 3. 2. Observe blade movement and airflow. | Fan starts at high speed. Airflow is strongest. Fan remains stable. |  |  | N | Y | Functional / Safety |
-| TC-05 | Verify speed changes from Low to Medium to High | Fan plugged in. Fan is stopped. | 1. Press button 1. 2. Press button 2. 3. Press button 3. 4. Compare airflow after each press. | Fan changes speed according to selected button. Airflow increases from Low to Medium to High. |  |  | N | Y | Functional |
-| TC-06 | Verify speed changes from High to Medium to Low | Fan plugged in. Fan running at High speed. | 1. Press button 2. 2. Press button 1. 3. Observe airflow and noise. | Fan decreases speed correctly. No sudden stop, vibration, or abnormal sound. |  |  | N | Y | Functional |
-| TC-07 | Verify pressing Stop while fan is at High speed | Fan plugged in. Fan running at High speed. | 1. Press button 3. 2. Wait until stable. 3. Press button 0. 4. Observe stopping behavior. | Fan stops safely. Blades slow down normally. No spark, burning smell, or sudden mechanical issue. |  |  | Y | Y | Physical safety edge case |
-| TC-08 | Verify only one speed button can stay selected | Fan plugged in. | 1. Press button 1. 2. Press button 2. 3. Press button 3. 4. Check physical button states. | Only the last selected speed button remains active. Previous button releases or becomes inactive. |  |  | N | Y | Usability / Functional |
-| TC-09 | Verify rotational louver knob turns wind direction rotation on | Fan plugged in. Fan running at Low/Medium/High speed. | 1. Press button 2. 2. Turn center knob to rotation ON position. 3. Observe front louver movement. | Rotational louver starts rotating. Wind direction changes smoothly. |  |  | N | Y | Functional |
-| TC-10 | Verify rotational louver knob turns wind direction rotation off | Fan plugged in. Fan running. Louver rotation is ON. | 1. Turn center knob to OFF position. 2. Observe louver movement. | Rotational louver stops rotating. Fan continues blowing at selected speed. |  |  | N | Y | Functional |
-| TC-11 | Verify louver rotation speed adjustment by knob | Fan plugged in. Fan running. Knob supports adjustable rotation speed. | 1. Turn knob slowly from low rotation setting to higher setting. 2. Observe louver rotation speed. | Louver rotation speed changes according to knob position. Movement remains smooth. |  |  | N | Y | Functional / Usability |
-| TC-12 | Verify louver knob behavior when fan speed is 0 | Fan plugged in. Speed button 0 selected. | 1. Press button 0. 2. Turn louver knob ON. 3. Observe fan blades and louver. | Fan blades stay stopped. Louver should not rotate if main motor power is off, or should behave according to product design without unsafe movement. |  |  | Y | Y | Edge case: knob ON while fan stopped |
-| TC-13 | Verify buttons are easy to press and labels are understandable | Fan placed on normal use surface. | 1. Inspect button labels 0, 1, 2, 3. 2. Press each button once. 3. Observe tactile feedback. | Labels are visible and understandable. Buttons are not too hard to press. User can identify Stop/Low/Medium/High easily. |  |  | N | Y | Usability |
-| TC-14 | Verify fan remains physically stable at High speed with louver rotation ON | Fan plugged in. Placed on flat surface. | 1. Press button 3. 2. Turn louver knob ON/high rotation. 3. Observe fan body for 1 minute. | Fan does not shake excessively, fall, or move from position. No unsafe vibration. |  |  | Y | Y | Physical safety edge case |
-| TC-15 | Verify front case/grill prevents finger contact with moving blades | Fan plugged in. Fan running at Low speed. Use safe non-body object only. | 1. Visually inspect front grill spacing. 2. Use a thin safe test object near grill without forcing it. 3. Do not insert fingers. | Grill prevents accidental contact with moving blades during normal use. No sharp edges on front case. |  |  | Y | Y | Physical safety. Do not use fingers. |
+### 2) Full AI Output
 
-# 8. Req 1: Rewrite skills + ai impact
+You can navigate to report.md to see the Required skills and AI Impact Analysis of each job. I do not copy here to avoid long content.
 
-## Prompt 
-15:35 03/06/2026
+### 3) Verdict
+- Verdict: `VALID`
+- Reason: The AI successfully performed Data Transformation and Feature Extraction by analyzing the existing "Job Description" text to generate specific "Required skills" and a 1-2 sentence "AI Impact Analysis" for all 10 job entries as required by the assignment.
 
-"In requirement 01 of report.md, for each job, based on the job description, rewrite the Required skills and AI Impact Analysis."
-![alt text](image-28.png)
+### 4) Reasoning (2–5 sentences)
 
-# 9. Format testcases table
+According to ISTQB CT-AI Section 4.1, the AI demonstrated a successful Data Transformation process by converting unstructured raw data (the full JD) into a structured format suitable for the report. This activity aligns with Feature Extraction (Section 4.1.1), where the AI identified and derived informative attributes—the required skills—from the broader text. Furthermore, the output meets the Functional Suitability criteria because the generated "AI Impact Analysis" strictly follows the 1-2 sentence constraint specified in the HW01 Requirement 1.
 
-## Prompt
+### 5) Student Fix
+- Corrected artifact: Again, you can navigate to report.md to see the Required skills and AI Impact Analysis of each job. I do not copy here to avoid long content.
 
-16:08 03/06/2026
-"The table in section 3.3 Test Cases of report.md. Ensure in each sell, between sentence, add a breakline \<br\>."
-![alt text](image-29.png)
+- What I did:
+  - Verification of Consistency: Manually verified that the "Required Skills" extracted by the AI are actually present in the original Job Descriptions to prevent hallucination.
+  - Constraint Compliance: Checked that every "AI Impact Analysis" is within the mandatory 1-2 sentence limit.
+  - Formatting Audit: Ensured that the AI correctly updated all 10 entries in report.md without deleting previous mandatory fields like links or screenshots.
 
-## Output
+---
 
-| **TC ID** |                                **Objective**                               |                         **Input / Preconditions**                        |                                                             **Steps**                                                            |                                                                 **Expected Result**                                                                 | **Actual Result** | **Verdict (Pass/Fail)** |
-|:---------:|:--------------------------------------------------------------------------:|:------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------:|:-----------------------:|
-| **TC-01** | Verify Stop button turns fan off                                           | Fan plugged in.<br> Button 1, 2, or 3 is active.                         | 1. Turn fan on at any speed.<br> 2. Press button 0.<br> 3. Observe blades and airflow.                                           | Fan motor stops.<br> No airflow.                                                                                                                    |                   |                         |
-| **TC-02** | Verify Low speed button works                                              | Fan plugged in.<br> Fan is stopped.                                      | 1. Press button 1.<br> 2. Observe blade movement and airflow.                                                                    | Fan starts at low speed.<br> Airflow is weak but stable.<br> No abnormal noise.                                                                     |                   |                         |
-| **TC-03** | Verify Medium speed button works                                           | Fan plugged in.<br> Fan is stopped.                                      | 1. Press button 2.<br> 2. Observe blade movement and airflow.                                                                    | Fan starts at medium speed.<br> Airflow is stronger than Low.<br> No abnormal noise.                                                                |                   |                         |
-| **TC-04** | Verify High speed button works                                             | Fan plugged in.<br> Fan is stopped.                                      | 1. Press button 3.<br> 2. Observe blade movement and airflow.                                                                    | Fan starts at high speed.<br> Airflow is strongest.<br> Fan remains stable.                                                                         |                   |                         |
-| **TC-05** | Verify speed changes from Low to Medium to High                            | Fan plugged in.<br> Fan is stopped.                                      | 1. Press button 1.<br> 2. Press button 2.<br> 3. Press button 3.<br> 4. Compare airflow after each press.                        | Fan changes speed according to selected button.<br> Airflow increases from Low to Medium to High.                                                   |                   |                         |
-| **TC-06** | Verify speed changes from High to Medium to Low                            | Fan plugged in.<br> Fan running at High speed.                           | 1. Press button 2.<br> 2. Press button 1.<br> 3. Observe airflow and noise.                                                      | Fan decreases speed correctly.<br> No sudden stop, vibration, or abnormal sound.                                                                    |                   |                         |
-| **TC-07** | Verify pressing Stop while fan is at High speed                            | Fan plugged in.<br> Fan running at High speed.                           | 1. Press button 3.<br> 2. Wait until stable.<br> 3. Press button 0.<br> 4. Observe stopping behavior.                            | Fan stops safely.<br> Blades slow down normally.<br> No spark, burning smell, or sudden mechanical issue.                                           |                   |                         |
-| **TC-08** | Verify only one speed button can stay selected                             | Fan plugged in.                                                          | 1. Press button 1.<br> 2. Press button 2.<br> 3. Press button 3.<br> 4. Check physical button states.                            | Only the last selected speed button remains active.<br> Previous button releases or becomes inactive.                                               |                   |                         |
-| **TC-09** | Verify rotational louver knob turns wind direction rotation on             | Fan plugged in.<br> Fan running at Low/Medium/High speed.                | 1. Press button 2.<br> 2. Turn center knob to rotation ON position.<br> 3. Observe front louver movement.                        | Rotational louver starts rotating.<br> Wind direction changes smoothly.                                                                             |                   |                         |
-| **TC-10** | Verify rotational louver knob turns wind direction rotation off            | Fan plugged in.<br> Fan running.<br> Louver rotation is ON.              | 1. Turn center knob to OFF position.<br> 2. Observe louver movement.                                                             | Rotational louver stops rotating.<br> Fan continues blowing at selected speed.                                                                      |                   |                         |
-| **TC-11** | Verify louver rotation speed adjustment by knob                            | Fan plugged in.<br> Fan running.<br> Knob supports adjustable rotation speed. | 1. Turn knob slowly from low rotation setting to higher setting.<br> 2. Observe louver rotation speed.                           | Louver rotation speed changes according to knob position.<br> Movement remains smooth.                                                              |                   |                         |
-| **TC-12** | Verify louver knob behavior when fan speed is 0                            | Fan plugged in.<br> Speed button 0 selected.                             | 1. Press button 0.<br> 2. Turn louver knob ON.<br> 3. Observe fan blades and louver.                                             | Fan blades stay stopped.<br> Louver should not rotate if main motor power is off, or should behave according to product design without unsafe movement. |                   |                         |
-| **TC-13** | Verify buttons are easy to press and labels are understandable             | Fan placed on normal use surface.                                        | 1. Inspect button labels 0, 1, 2, 3.<br> 2. Press each button once.<br> 3. Observe tactile feedback.                             | Labels are visible and understandable.<br> Buttons are not too hard to press.<br> User can identify Stop/Low/Medium/High easily.                    |                   |                         |
-| **TC-14** | Verify fan remains physically stable at High speed with louver rotation ON | Fan plugged in.<br> Placed on flat surface.                              | 1. Press button 3.<br> 2. Turn louver knob ON/high rotation.<br> 3. Observe fan body for 1 minute.                               | Fan does not shake excessively, fall, or move from position.<br> No unsafe vibration.                                                               |                   |                         |
-| **TC-15** | Verify front case/grill prevents finger contact with moving blades         | Fan plugged in.<br> Fan running at Low speed.<br> Use safe non-body object only. | 1. Visually inspect front grill spacing.<br> 2. Use a thin safe test object near grill without forcing it.<br> 3. Do not insert fingers. | Grill prevents accidental contact with moving blades during normal use.<br> No sharp edges on front case.                                           |                   |                         |
+## Entry A-04
+
+### 1) Prompt + Tool
+- Tool name: `Gemini 3.1 Pro`
+- Timestamp: `16:18 03/06/2026`
+- Full prompt (verbatim):
+
+```text
+Find 20 software defects publicized from cve.org between 2022 and 2026:
+- Mandatory: ≥ 5 defects related to AI/LLM (hallucination, prompt injection, bias).
+- Each defect includes: source link, description, severity, consequences, solution.
+```
+
+![alt text](logs/image-1.png)
 
 
-# 10. 20 defects
+### 2) Full AI Output
 
-## Prompt
-
-16:18 03/06/2026
-
-## Output
+```text
 
 ## Part 1: AI & Large Language Model (LLM) Defects
 
@@ -528,18 +508,39 @@ Multimodal AI products drive demand for specialized QA (audio/video/text), not o
 * **Severity:** Critical (CVSS 9.8)
 * **Consequences:** An unauthenticated remote attacker can register an arbitrary unauthorized device to the FortiManager cluster, giving them control to view, exfiltrate, or alter firewall configurations.
 * **Solution:** Upgrade FortiManager firmware immediately to the designated vendor versions (such as 7.6.1, 7.4.5, or 7.2.8).
+```
 
-# 11. QA/QC role mindmap
+### 3) Verdict
+- Verdict: `INVALID`
+- Reason: The AI output suffers from significant "Wrong data" and "Reduced accuracy" as defined in ISTQB CT-AI Sections 4.3 and 4.4. Specifically, 20% of the entries (4 out of 20) contain hallucinated CVE mappings where the IDs refer to completely different products and vulnerabilities than those described by the AI.
 
-## Prompt
+### 4) Reasoning (2–5 sentences)
 
-08:15 04/06/2026
-Gemini 3.1 Pro
+According to ISTQB CT-AI Section 4.3, the presence of "Wrong data" (captured incorrectly or hallucinated) and "Incomplete data" (missing correct version fixes) severely compromises the integrity of the artifact. These data quality issues led to "Reduced accuracy" and a "Flawed model/artifact" per Section 4.4, making the list unreliable for technical auditing. Furthermore, the output fails the Functional Suitability criteria for HW01 Requirement 2 because it provided incorrect technical references for 25% of the mandatory AI/LLM defect categories.
 
-> Using the PDF file I provided, generate the QA/QC role mindmap in mermaid code.
-![alt text](image-5.png)
+### 5) Student Fix
+- Corrected artifact: Please navigate to report.md to view section Requirement 2.
 
-## Output
+- What changed:
+  - Fixed CVE Hallucinations: Replaced 4 mismapped CVE IDs (#3, #5, #6, and #7) with correct IDs and corresponding data for the intended AI/LLM products.
+  - Corrected Severity: Adjusted the CVSS scores for entries #2, #4, #12, and #13 to match the official National Vulnerability Database (NVD) ratings.
+  - Version Accuracy: Updated the "Solution" for entry #4 to specify the correct patch version (1.14.3+) instead of the hallucinated one.
+  - Impact Refinement: Rewrote the "Consequences" for entries #2, #17, and #20 to accurately reflect official records rather than the AI's overstated impact.
+  - Requirement Compliance: Added the mandatory identification of AI bias or hallucination for every single defect entry as required by the HW01 instructions.
+
+---
+
+## Entry A-05
+
+### 1) Prompt + Tool
+- Tool name: `Gemini 3.1 Pro`
+- Timestamp: `08:15 04/06/2026`
+- Full prompt (verbatim): "Using the PDF file I provided, generate the QA/QC role mindmap in mermaid code."
+
+![alt text](logs/image-5.png)
+
+### 2) Full AI Output
+
 
 ```mermaid
 mindmap
@@ -606,18 +607,58 @@ Key Role Mappings from the Syllabus:
 - Create a detailed responsibility matrix for these roles
 - Generate a Markdown table detailing the specific test techniques for each role
 
-![alt text](image-6.png)
+![alt text](logs/image-6.png)
 
-![alt text](image-7.png)
+![alt text](logs/image-7.png)
 
-# 12. Generate 15 testcases
+### 3) Verdict
+- Verdict: `INVALID`
+- Reason: The AI output contains "Wrong data" and "Incomplete data" regarding the official ISTQB CT-AI taxonomy and technical content. It fails to accurately represent the Target Audience as a list of roles rather than a strict responsibility map, and it omits essential ML Functional Performance Metrics and Quality Characteristics defined in the syllabus.
 
-## Prompt
+### 4) Reasoning (2–5 sentences)
 
-> - 19:26 04/06/202
-> - Model: GPT 5.5
+The AI failed to distinguish between the Target Audience mentioned in ISTQB CT-AI Section 0.2 and a functional responsibility mapping, leading to the creation of non-existent role-duty hierarchies. Furthermore, the mindmap presents "Incomplete data" by omitting several critical metrics from Chapter 5 (e.g., MSE, R-squared, silhouette coefficient) and quality characteristics from Chapter 2 (e.g., Ethics, Safety, Side Effects). By merging separate concepts and misassigning technical duties like Concept Drift Tracking to weakly related roles, the AI violated the requirement for Functional Suitability and accurate Data Transformation of the source material.
 
-```
+### 5) Student Fix
+- I don't fix because the assignment asked student to detect the mistakes. Therefore, I keep the content generated to show the mistakes.
+- I pointed out 5 mistakes:
+1. The mindmap treats CT-AI syllabus topics as fixed role duties.
+   - Example: `Testers and Test Engineers -> AI-Specific Test Techniques -> Pairwise Testing / Metamorphic Testing / Back-to-Back Testing / A/B Testing`.
+   - Mistake: ISTQB CT-AI lists these as test techniques for AI-based systems, not duties assigned only to testers/test engineers.
+   - Fix: Move them under `AI-Based System Test Techniques`.
+
+2. The role taxonomy is not official responsibility mapping.
+   - CT-AI names roles such as testers, test analysts, data analysts, test engineers, test consultants, test managers, UAT testers, software developers, project managers, quality managers, and business analysts as target audience.
+   - Mistake: Gemini converted an audience list into a responsibility map, but the syllabus does not define exact branches per role.
+   - Fix: Label this as `Target Audience / Related Roles`, or separate roles from syllabus knowledge areas.
+
+3. ML functional performance metrics are incomplete.
+   - Mindmap lists only `Confusion Matrix`, `Precision and Recall`, and `F1-Score`.
+   - Mistake: CT-AI also covers `Accuracy`, `ROC curve`, `AUC`, `MSE`, `R-squared`, `intra-cluster metrics`, `inter-cluster metrics`, `silhouette coefficient`, benchmark suites, and metric limitations.
+   - Fix: Add missing metrics or state these are only examples.
+
+4. Quality characteristics are incomplete and merged incorrectly.
+   - Mindmap lists `Flexibility and Adaptability`, `Autonomy and Evolution`, and `Bias and XAI Assessment`.
+   - Mistake: CT-AI also includes `Ethics`, `Side Effects and Reward Hacking`, `Transparency`, `Interpretability`, `Explainability`, and `Safety`.
+   - Also, `Bias and XAI Assessment` merges separate concepts.
+   - Fix: Follow CT-AI Chapter 2 structure directly.
+
+5. Some responsibilities are assigned to weakly related roles.
+   - Example: `User Acceptance Testers -> Safety and Ethics Compliance / Transparency and Explainability`.
+   - Mistake: Safety, ethics, transparency, and explainability are AI quality characteristics, not only UAT tester responsibilities.
+   - Another example: `Business Analysts -> Concept Drift Tracking`; concept drift is more about ML model monitoring and maintenance.
+   - Fix: Move these items to quality characteristics or ML model monitoring sections.
+
+---
+
+## Entry A-06
+
+### 1) Prompt + Tool
+- Tool name: `GPT 5.5`
+- Timestamp: `19:26 04/06/202`
+- Full prompt (verbatim):
+
+```text
 Act as an expert QA/QC Test Engineer. I need to design test cases for a physical product for Requirement 3 section in report.md.
 
 Product Specification:
@@ -641,12 +682,10 @@ Instructions for columns:
 3. Verdict: Leave this column empty (or put "[Pending]").
 4. Ensure all descriptions, steps, and expected results are written in technical English and highly precise for physical hardware testing.
 
-Write them into report.md in the Requirement 3 section.   
+Write them into report.md in the Requirement 3 section.
 ```
 
-![alt text](image-8.png)
-
-## Output
+### 2) Full AI Output
 
 | TC ID | Objective | Input / Pre-conditions | Execution Steps | Expected Result | Actual Result | Verdict |
 |---|---|---|---|---|---|---|
@@ -665,3 +704,50 @@ Write them into report.md in the Requirement 3 section.
 | TC13 | [Functional / Boundary] Verify auto-off behavior at the shortest timer interval. | Fan is ON. Timer can be set to the shortest supported interval. Test environment allows waiting for the full interval. | 1. Press TIMER until the shortest supported interval is selected.<br>2. Do not press any other button.<br>3. Wait until the selected interval elapses.<br>4. Observe fan state after timeout. | Fan remains ON before the interval expires. When the selected interval elapses, fan automatically changes to OFF state. Motor, airflow, and oscillation stop. | [Pending Physical Execution] | [Pending] |
 | TC14 | [Interoperability] Verify SPEED change while MODE and SWING are active. | Fan is ON. Mode is Natural or Sleep. Swing is ON. Current speed is Low or Medium. | 1. Press SPEED once.<br>2. Observe speed indicator, mode indicator, swing indicator, airflow, and oscillation for 10 seconds. | Speed changes to the next valid speed. Existing MODE selection remains unchanged. SWING remains ON. Fan continues operating without reset or interruption. | [Pending Physical Execution] | [Pending] |
 | TC15 | [Usability] Verify control-panel button feedback and single-function response. | Fan is connected to rated AC supply. Tester can clearly view all button labels and indicators. | 1. Press ON/OFF, SPEED, TIMER, SWING, and MODE one at a time under valid operating conditions.<br>2. After each press, observe whether only the intended function changes.<br>3. Confirm the associated indicator or physical behavior is recognizable. | Each button press is accepted with clear visual or physical feedback. Button labels are understandable. Each button changes only its assigned function, with no accidental activation of adjacent controls. | [Pending Physical Execution] | [Pending] |
+
+### 3) Verdict
+- Verdict: `VALID`
+- Reason: The AI successfully interpreted the product specifications for the LIFAN Đ-16RC-0 fan and generated 15 technically sound test cases following the requested Markdown format. While the cases were functionally correct, they lacked the specialized edge cases required to fulfill the "Analysis" level of the assignment, necessitating human intervention.
+
+### 4) Reasoning (2–5 sentences)
+
+According to ISTQB CT-AI Section 11.3, while AI is highly effective for rapid test case generation and maximizing basic coverage, it often lacks the deep domain intuition required to identify complex "corner" or edge cases without specific prompting. The output demonstrated "Functional Suitability" as defined in ISTQB CT-AI Section 4.1, accurately mapping inputs to expected results for standard operations. However, to meet the specific Bloom-AI level G9.3 (Analyse) criteria in the HW01 Requirement 3, the test suite required human augmentation to include cases the AI missed.
+
+### 5) Student Fix
+- Corrected artifact:
+
+
+| **TC ID** |                                                         **Objective**                                                        |                                                             **Input / Pre-conditions**                                                             |                                                                                          **Execution Steps**                                                                                          |                                                                                                 **Expected Result**                                                                                                |                 **Actual Result**                | **Verdict** |
+|:---------:|:----------------------------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------:|:-----------:|
+|  **TC01** | [Functional] Verify that the ON/OFF button powers on the fan from standby/off state.                                         | Fan is assembled safely, connected to rated AC supply, and currently OFF. Control panel is visible.                                                | 1. Press the ON/OFF button once.<br>2. Observe fan operation and panel indicators for 5 seconds.                                                                                                      | Fan changes to ON state. Fan motor runs and produces airflow. Control panel shows active power status. No other function requires manual activation to start basic operation.                                      | The fan is still OFF                             | Failed      |
+|  **TC02** | [Functional] Verify that the ON/OFF button powers off the fan during operation.                                              | Fan is ON and producing airflow at any valid speed.                                                                                                | 1. Press the ON/OFF button once.<br>2. Observe motor, airflow, swing state, and panel indicators for 5 seconds.                                                                                       | Fan changes to OFF state. Motor stops, airflow stops, oscillation stops if active, and control panel no longer indicates active operation except any allowed standby indication.                                   | The fan is still ON                              | Failed      |
+|  **TC03** | [Functional] Verify SPEED cycles from Low to Medium.                                                                         | Fan is ON. Current speed indicator is Low.                                                                                                         | 1. Press SPEED once.<br>2. Observe the speed indicator and airflow intensity.                                                                                                                         | Speed changes from Low to Medium. Medium speed indicator is active. Airflow becomes stronger than Low.                                                                                                             | Same as expected result                     | Passed      |
+|  **TC04** | [Functional] Verify SPEED cycles from Medium to High.                                                                        | Fan is ON. Current speed indicator is Medium.                                                                                                      | 1. Press SPEED once.<br>2. Observe the speed indicator and airflow intensity.                                                                                                                         | Speed changes from Medium to High. High speed indicator is active. Airflow becomes stronger than Medium.                                                                                                           | Same as expected result                     | Passed      |
+|  **TC05** | [Functional / Boundary] Verify SPEED wraps from High back to Low.                                                            | Fan is ON. Current speed indicator is High.                                                                                                        | 1. Press SPEED once.<br>2. Observe the speed indicator and airflow intensity.                                                                                                                         | Speed changes from High to Low. Low speed indicator is active. Airflow returns to the lowest available intensity. No undefined speed state appears.                                                                | Same as expected result                     | Passed      |
+|  **TC06** | [Functional] Verify MODE cycles from Normal to Natural.                                                                      | Fan is ON. Current mode indicator is Normal.                                                                                                       | 1. Press MODE once.<br>2. Observe the mode indicator and airflow profile for at least 10 seconds.                                                                                                     | Mode changes from Normal to Natural. Natural mode indicator is active. Fan remains ON and uses the Natural wind profile.                                                                                           | The MODE button did not function                 | Failed      |
+|  **TC07** | [Functional] Verify MODE cycles from Natural to Sleep.                                                                       | Fan is ON. Current mode indicator is Natural.                                                                                                      | 1. Press MODE once.<br>2. Observe the mode indicator and airflow profile for at least 10 seconds.                                                                                                     | Mode changes from Natural to Sleep. Sleep mode indicator is active. Fan remains ON and uses the Sleep wind profile.                                                                                                | The MODE button did not function                 | Failed      |
+|  **TC08** | [Functional / Boundary] Verify MODE wraps from Sleep back to Normal.                                                         | Fan is ON. Current mode indicator is Sleep.                                                                                                        | 1. Press MODE once.<br>2. Observe the mode indicator and airflow profile for at least 10 seconds.                                                                                                     | Mode changes from Sleep to Normal. Normal mode indicator is active. No undefined wind profile appears.                                                                                                             | The MODE button did not function                 | Failed      |
+|  **TC09** | [Functional] Verify SWING enables horizontal oscillation.                                                                    | Fan is ON. Swing is currently OFF. Fan head has safe clearance for oscillation.                                                                    | 1. Press SWING once.<br>2. Observe fan head movement and swing indicator for 10 seconds.                                                                                                              | Horizontal oscillation starts. Swing indicator shows ON state. Fan continues producing airflow at the selected speed and mode.                                                                                     | Same as expected result                     | Passed      |
+|  **TC10** | [Functional] Verify SWING disables horizontal oscillation.                                                                   | Fan is ON. Swing is currently ON and horizontal oscillation is visible.                                                                            | 1. Press SWING once.<br>2. Observe fan head movement and swing indicator for 10 seconds.                                                                                                              | Horizontal oscillation stops. Swing indicator shows OFF state. Fan continues producing airflow at the selected speed and mode.                                                                                     | Same as expected result                     | Passed      |
+|  **TC11** | [Functional] Verify TIMER increments from no timer to the first supported timer interval.                                    | Fan is ON. Timer is currently OFF or no timer indicator is active.                                                                                 | 1. Press TIMER once.<br>2. Observe timer indicator immediately after the press.                                                                                                                       | Timer changes from OFF to the first supported auto-off interval. The corresponding timer indicator is active. Fan remains ON.                                                                                      | The TIMER button did not function                | Failed      |
+|  **TC12** | [Functional / Boundary] Verify TIMER cycles through all supported intervals and returns to no-timer state.                   | Fan is ON. Timer indicator is visible. Manufacturer-supported timer interval markings are known from the panel/manual.                             | 1. Press TIMER repeatedly one step at a time.<br>2. After each press, record the active timer indicator.<br>3. Continue until the sequence passes the maximum supported interval.                     | Timer indicator advances exactly one interval per press. After the maximum supported interval, the next TIMER press returns to no-timer/OFF timer state. No skipped, duplicated, or undefined timer state appears. | The MODE button did not function                 | Failed      |
+|  **TC13** | [Functional] Verify that the fan defaults to Low speed when powered ON from the standby/OFF state.                           | Fan is connected to rated AC supply and currently OFF. Control panel is clear and visible.                                                         | 1. Press the ON/OFF button once to power ON the fan.<br>2. Observe the active speed indicator and initial airflow intensity.                                                                          | Fan powers ON successfully. The fan speed automatically defaults to Low. The Low speed indicator is illuminated, and the initial airflow matches the Low setting.                                                  | The default speed is Medium, then change to Low | Failed      |
+|  **TC14** | [Safety] Verify that the fan guard (grille) mesh layout prevents human fingers from making contact with the rotating blades. | Fan is fully assembled, powered ON, and the blades are rotating at High speed. A standard test finger or safe visual inspection tool is available. | 1. Gently attempt to pass a safe finger-sized probe through the front and rear fan guards at various gap locations.<br>2. Verify if the probe can reach the rotating blades.                          | The fan guard gaps are narrow enough to block the probe entirely. It is physically impossible for a finger to touch or come into dangerous proximity with the rotating fan blades from any angle.                  | Same as expected result                     | Passed      |
+|  **TC15** | [Appearance / UI] Verify the legibility, print quality, and clarity of all text and markings on the fan body.                | Fan is placed in a well-lit test environment. Tester inspects the device from a standard user distance.                                            | 1. Read and inspect all text on the fan body (Brand logo "LIFAN", Model "Đ-16RC-0", and button labels: SPEED, TIMER, SWING, MODE, ON/OFF).<br>2. Check for printing defects, fading, or misspellings. | All text, symbols, and labels are perfectly legible, sharply printed, and easy to read. Font alignment is consistent, and there are no signs of smudging, faded ink, or spelling errors.                           | Same as expected result                     | Passed      |
+
+- What changed: Remove 3 last test cases with edge cases.
+---
+
+## AI Accuracy Summary (required at end)
+
+- Total artifact entries: `6`
+- VALID: `3` (`50%`)
+- INVALID: `3` (`50%`)
+- INCOMPLETE: `0` (`0%`)
+
+### Conclusion
+- When AI should be used for this HW:
+  - Research for information but need validation.
+  - Format the documents.
+- When AI should not be used for this HW:
+  - Do screen shot
