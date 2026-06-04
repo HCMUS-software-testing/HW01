@@ -971,14 +971,15 @@
 ## 3) Requirement 3 — Test Cases for ONE Physical Product (40 pts)
 
 ### 3.1 Device Declaration
-- Device type: Domestic stand fan with electronic/soft-button control panel
-- Brand: Lifan
+- Device type: `Domestic stand fan with electronic/soft-button control panel`
+- Brand: `Lifan`
 - Model: `LIFAN Đ-16RC-0`
-- Year: `<not specified>`
-- Serial number (masked middle 4 chars): `<not available>`
+- Year: `Don't remember`
+- Serial number (masked middle 4 chars): `Don't remember`
 
 ### 3.2 Required Device Evidence
-- Device photo + student ID in same frame: `<file path>`
+
+![Device Evidence](./req3-images/device_studentcard.jpg)
 
 ### 3.3 Test Cases (15 total)
 
@@ -996,31 +997,33 @@
 |  **TC10** | [Functional] Verify SWING disables horizontal oscillation.                                                                   | Fan is ON. Swing is currently ON and horizontal oscillation is visible.                                                                            | 1. Press SWING once.<br>2. Observe fan head movement and swing indicator for 10 seconds.                                                                                                              | Horizontal oscillation stops. Swing indicator shows OFF state. Fan continues producing airflow at the selected speed and mode.                                                                                     | Same as expected result                     | Passed      |
 |  **TC11** | [Functional] Verify TIMER increments from no timer to the first supported timer interval.                                    | Fan is ON. Timer is currently OFF or no timer indicator is active.                                                                                 | 1. Press TIMER once.<br>2. Observe timer indicator immediately after the press.                                                                                                                       | Timer changes from OFF to the first supported auto-off interval. The corresponding timer indicator is active. Fan remains ON.                                                                                      | The TIMER button did not function                | Failed      |
 |  **TC12** | [Functional / Boundary] Verify TIMER cycles through all supported intervals and returns to no-timer state.                   | Fan is ON. Timer indicator is visible. Manufacturer-supported timer interval markings are known from the panel/manual.                             | 1. Press TIMER repeatedly one step at a time.<br>2. After each press, record the active timer indicator.<br>3. Continue until the sequence passes the maximum supported interval.                     | Timer indicator advances exactly one interval per press. After the maximum supported interval, the next TIMER press returns to no-timer/OFF timer state. No skipped, duplicated, or undefined timer state appears. | The MODE button did not function                 | Failed      |
-|  **TC13** | [Functional] Verify that the fan defaults to Low speed when powered ON from the standby/OFF state.                           | Fan is connected to rated AC supply and currently OFF. Control panel is clear and visible.                                                         | 1. Press the ON/OFF button once to power ON the fan.<br>2. Observe the active speed indicator and initial airflow intensity.                                                                          | Fan powers ON successfully. The fan speed automatically defaults to Low. The Low speed indicator is illuminated, and the initial airflow matches the Low setting.                                                  | The default speed is Medium, then change to SLOW | Failed      |
+|  **TC13** | [Functional] Verify that the fan defaults to Low speed when powered ON from the standby/OFF state.                           | Fan is connected to rated AC supply and currently OFF. Control panel is clear and visible.                                                         | 1. Press the ON/OFF button once to power ON the fan.<br>2. Observe the active speed indicator and initial airflow intensity.                                                                          | Fan powers ON successfully. The fan speed automatically defaults to Low. The Low speed indicator is illuminated, and the initial airflow matches the Low setting.                                                  | The default speed is Medium, then change to Low | Failed      |
 |  **TC14** | [Safety] Verify that the fan guard (grille) mesh layout prevents human fingers from making contact with the rotating blades. | Fan is fully assembled, powered ON, and the blades are rotating at High speed. A standard test finger or safe visual inspection tool is available. | 1. Gently attempt to pass a safe finger-sized probe through the front and rear fan guards at various gap locations.<br>2. Verify if the probe can reach the rotating blades.                          | The fan guard gaps are narrow enough to block the probe entirely. It is physically impossible for a finger to touch or come into dangerous proximity with the rotating fan blades from any angle.                  | Same as expected result                     | Passed      |
 |  **TC15** | [Appearance / UI] Verify the legibility, print quality, and clarity of all text and markings on the fan body.                | Fan is placed in a well-lit test environment. Tester inspects the device from a standard user distance.                                            | 1. Read and inspect all text on the fan body (Brand logo "LIFAN", Model "Đ-16RC-0", and button labels: SPEED, TIMER, SWING, MODE, ON/OFF).<br>2. Check for printing defects, fading, or misspellings. | All text, symbols, and labels are perfectly legible, sharply printed, and easy to read. Font alignment is consistent, and there are no signs of smudging, faded ink, or spelling errors.                           | Same as expected result                     | Passed      |
 
 ### 3.4 Test Execution Video Log (>=5)
 
-> Paste from `hw01-test-execution-video-log-template.md`
+| Video ID | TC ID | Title | Platform | Link |
+|---|---|---|---|---|
+| VID-01 | TC-01 | [ 23127075 _ SOFTWARE TESTING ] TC 01 | YouTube Unlisted | https://www.youtube.com/watch?v=xYFowoA903U |
+| VID-02 | TC-02 | [ 23127075 _ SOFTWARE TESTING ] TC 02 | YouTube Unlisted | https://www.youtube.com/watch?v=4-cxZAMtfmg |
+| VID-03 | TC-03 | [ 23127075 _ SOFTWARE TESTING ] TC 03 | YouTube Unlisted | https://www.youtube.com/watch?v=EjQsOBYgneg |
+| VID-04 | TC-13 | [ 23127075 _ SOFTWARE TESTING ] TC 13 | YouTube Unlisted | https://www.youtube.com/watch?v=zyAoDVczHws |
+| VID-05 | TC-14 | [ 23127075 _ SOFTWARE TESTING ] TC 14 | YouTube Unlisted | https://www.youtube.com/watch?v=stYr6CmpUu8 |
 
-### 3.5 Device Defect Log (target >=5)
-
-> Paste from `hw01-device-defect-issue-log-template.md`
-
-### 3.6 AI-missed Edge Cases (>=3 mandatory)
+### 3.5 AI-missed Edge Cases (>=3 mandatory)
 
 **AI conversation screenshot proving AI did not generate it**
 
 ![Evidence](image.png)
 
-**Explanation**
+**Edge Cases Table**
 
 | Edge Case ID | Test Case ID | Why AI Missed It | Why It Matters |
 |---|---|---|---|
-| EC-01 | TC-13 | `<reason>` | `<impact>` |
-| EC-02 | TC-14 | `<reason>` | `<impact>` |
-| EC-03 | TC-15 | `<reason>` | `<impact>` |
+| EC-01 | TC-13 | AI misses the "default to Low speed upon power-on" case because of its spec-driven bias, focusing strictly on explicit button inputs while overlooking implicit hardware initialization rules. | It makes UX becomes weird because the default speed must be LOW |
+| EC-02 | TC-14 | AI lacks real-world physical common sense and relies strictly on explicit specifications rather than anticipating implicit hazards or chaotic human behaviors. | If the user's finger touch the fan's blades, he / she gets injured |
+| EC-03 | TC-15 | AI misses the UI legibility case because it operates purely on abstract textual data, rendering it blind to physical visual attributes like font size, contrast, paint quality, or real-world lighting conditions. | If the words / numbers printed on the fan are not readable, the users might make mistakes |
 
 ---
 
@@ -1120,7 +1123,7 @@ mindmap
 
 ### G9.3 — Analyse
 - Analyse AI-generated output and identify missing edge cases
-- Evidence in Requirement 3.6
+- Evidence in Requirement 3.5
 
 ---
 
